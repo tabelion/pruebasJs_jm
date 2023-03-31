@@ -1,0 +1,92 @@
+/* 🔵 ======================================== 🔷
+# 🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+# 🔵  Empresa: Industrias de Software Vipescri  🔷
+# 🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#  🔵 ======================================== 🔷 
+#️⃣ idNombre esta es unica
+⚪.clase    esta se puede repetir
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+
+h1 {
+    background-color:beige; 
+    color: orangered;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    height: 35px;
+    padding-top: 5px;
+}
+
+/* h4 :hover {
+    background-color: burlywood;
+} */
+
+h4 {
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.boton {
+    /*clear:right;*/
+    float: right;
+    /*margin-left: 0px;*/
+    /*width: 50%;*/
+    margin-top: 1rem;
+  
+    /*background: red;*/
+    max-width: 777px;
+}
+
+.boton a {
+    font-size: 11px;
+    text-decoration: none;
+    padding: 3px 7px;
+    /* arriba y abajo - hacia los lados 
+	(para que tome el margin-top hay que agregarle la propiedad "display: inline-block") */
+    display: inline-block;
+    /* de ser un elemento en linea, covertirlo en bloque */
+    margin: 0px 7px 1px 0px;
+    /* arriba derecha abajo izquierda */
+    /* background: #2A9FDE; */
+    /*#3BA7E1;  DarkCyan */
+    color: #fff;
+    border-radius: 5px;
+    /*box-shadow : [horiz] [vertical] [radio de desenfoque] [opcional radio de difusión] [color] ;*/
+    -moz-box-shadow: inset 0 0 10px #1D64A6;
+    -webkit-box-shadow: inset 0 0 10px #1D64A6;
+    box-shadow: inset 0 0 10px #1D64A6;
+}
+
+
+/* 
+Grupo 2
+Francisco Oscar David Gómez
+Guido Jose Dealbera
+Luisa Fernanda Gonzalez Duque
+Marco Polo Bejarano Maluquish
+Emerson Ocon Bohorques
+Sebastian Omar Gimenez
+Raúl Orlando Villalba
+Maria Sandra Martinez
+Joshua Nuñez Arcila
+Jose Luis Polo Quispe
+Jheyson Giancarlo Alvarez Reategui
+Adolfo Palma Mayhua
+*/

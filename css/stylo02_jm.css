@@ -1,0 +1,185 @@
+/* 🔵 ======================================== 🔷
+# 🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+# 🔵  Empresa: Industrias de Software Vipescri  🔷
+# 🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#  🔵 ======================================== 🔷 
+#️⃣ idNombre esta es unica
+⚪.clase    esta se puede repetir
+*/
+
+/*      reglas del CSS  consta de 2 partes
+1️⃣ El selector
+2️⃣ Bloque de declaraciones (c/u de los atributos que modiificamos) atributo: valor y el bloque de declaracion esta indicado por las llaves {} 
+*/
+
+.texto-32 {
+    font-size: 32px; 
+}
+
+.bg-skyblue {
+    color: skyblue;
+}
+
+.hijos-directos > li {
+    background-color: thistle;
+}
+
+.hijos-descendientes b {
+    background-color: thistle;
+}
+
+/* ?.los selectores de hermanos van a aplicar a los elementos que son hermanos y que estan pòr debajo del elemento de referencia */
+
+.hermanos-general ~ li {
+    background-color: bisque;
+}
+
+.hermanos-adyacentes + li {
+    background-color: bisque;
+}
+
+/* todo: -------------------------------------------------- */
+
+/* * selectores de atributos */
+.selector-atributo a[href]{
+    background-color: azure;
+}
+
+.selector-atributo a[rel="noopener"] {
+    font-weight: bold;
+    color: brown;
+}
+
+/* * se aplica si tiene el texto indicado */
+.selector-atributo a[href*="w3"] {
+    background-color: aqua;
+}
+
+/* * ^ se aplica solo si comiensa con el texto indicado */
+.selector-atributo a[href^="http://"] {
+    font-size: 22px;
+}
+
+/* * $ se aplica solo si termina con el texto indicado */
+.selector-atributo a[href$="2020/"] {
+    text-decoration: none;
+}
+
+/* * El comodin del ~ aplica el estilo si contiene el texto indicado en una lista separada por espacios  */
+.selector-atributo a[class~="curso"] {
+    font-size: 30px;
+}
+
+/* * El comodin del | aplica el estilo si contiene el texto indicado en una lista separada por espacios pero despues del texto en cuestion tenga un guion medio */
+.selector-atributo a[class|="texto"] {
+    font-style: italic;
+    font-size: 24px;
+}
+
+/* * El Selector universal indicado por el asterisco (*)  */
+
+*{
+    font-family: sans-serif; 
+}
+
+/*  todo: las pseudos clases dan estilos dependiendo del contexto, posición o estado del elemento */
+/* ? :required  :valid  :invalid  :focus  :visited   :hover  :first-child  :last-child :nth-child()  --- even  odd */
+
+.form-pseudoclases *:required {
+    /* border: thick solid greenyellow;  */
+    border-color: rgb(0, 255, 34);
+}
+
+.form-pseudoclases *:valid {
+    border-color: yellow;
+}
+
+.form-pseudoclases *:invalid {
+    border-color: red;
+}
+    
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+    font-size: 32x;
+}
+
+.form-pseudoclases label {
+    margin-left: 20px;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.form-pseudoclases input[type="button"] {
+    margin-left: 30%;
+    margin-top: 30px;
+    border-color: aqua;
+}
+
+.menu-pseudoclases a:visited {
+    color: brown;
+}
+
+.menu-pseudoclases a:hover {
+    background-color: yellowgreen;
+    font-size: 24px;
+}
+
+.lista-pseudoclases li:first-child {
+    color: green;
+}
+
+.lista-pseudoclases li:last-child {
+    color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+    color: navy;
+    background-color: azure;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+    font-size: 20px;
+    background-color: aliceblue;
+}
+
+.lista-pseudoclases li:nth-child(3n+1) {
+    font-weight: bolt;
+    color: brown;
+}
+
+/*  pares = even */
+.lista-pseudoclases li:nth-child(even) {
+    background-color: aqua;
+}
+
+/* impares = odd */
+.lista-pseudoclases li:nth-child(odd) {
+    background-color: yellow;
+}
+
+h2:hover {
+    background-color: orange;
+}
+
+/* todo: articulo-pseudoclases */
+/*  ? :first-of-type  : :last-of-type   :not() */
+.articulo-pseudoclases {
+    margin-left: 30px;
+}
+
+.articulo-pseudoclases p:first-of-type {
+    background-color: palevioletred;
+}
+
+.articulo-pseudoclases p:last-of-type {
+    background-color: pink;
+}
+
+.articulo-pseudoclases *:not(p) {
+    background-color: aquamarine;
+}
+
+/* todo: pseudoelementos. Dan estilo a parte especifica de un elemento se usa el :: para diferenciarlos de las pseudoclases */
+/* ? ::after ::before  ::first-letter  ::first-line  ::selection */

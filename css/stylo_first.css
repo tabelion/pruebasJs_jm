@@ -1,0 +1,278 @@
+/* 🔵 ======================================== 🔷
+# 🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+# 🔵  Empresa: Industrias de Software Vipescri  🔷
+# 🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#  🔵 ======================================== 🔷 
+#️⃣ #idNombre esta es unica
+⚪ .clase    esta se puede repetir
+*/
+/* * https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+? apply a natural box layout model to all elements but allowing components to change */
+
+html {
+    box-sizing: border-box;
+    /* <!-- onMouseOver="style.cursor='pointer'" --> */
+    /*cursor: pointer; */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* todo: ========================= */
+h1 {
+    background-color: darkslateblue;
+    color: red;
+    text-align: center;
+    top: 0px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 45px;
+    position: sticky;
+}
+
+.subtitulo {
+    color:aquamarine;
+    margin-right: 20px;
+    text-align: right;
+}
+
+h2 {
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    height: 35px;
+    padding-top: 5px;
+    top: 44px;
+    position: sticky;
+    /* z-index: -1; */
+}
+
+h2:hover {
+    background-color: bisque;
+    color: red;
+    cursor: pointer;
+}
+
+h3 {
+    background-color: rgb(34, 226, 44);
+    color: blue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.header { 
+    background-color: olive;
+    color: blue;
+    font-size: 22px;
+    text-align: center;
+    /* margin-top: -30px; */
+    width: 100%;
+    height: 77px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+.sticky-foto {
+    position: sticky;
+    top: 200px;
+}
+
+
+/* todo: boton */
+.boton a {
+    /* margin-left: 10px; */
+    font-size: 11px;
+    text-decoration: none;
+    padding: 3px 7px;
+    /* arriba y abajo - hacia los lados 
+	(para que tome el margin-top hay que agregarle la propiedad "display: inline-block") */
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    margin-left: 20px;
+    /* background: #2A9FDE; */
+    /* color: #fff; */
+    border-radius: 5px;
+    /*box-shadow : [horiz] [vertical] [radio de desenfoque] [opcional radio de difusión] [color] ;*/
+    -moz-box-shadow: inset 0 0 10px #1D64A6;
+    -webkit-box-shadow: inset 0 0 10px #1D64A6;
+    box-shadow: inset 0 0 10px #1D64A6;
+    /* z-index: 888; */
+}
+
+.ejercicio {
+    float: left;
+    background-image: url("../img/ico/07-Factura.ico");
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.regresa {
+    float: left;
+    
+    /* arriba derecha abajo izquierda 
+    ? margin: 0px 0px 0px 10px; */
+    margin: 0px 0px 0px 0px;
+}
+
+.indice a{
+    /* padding: 7px 7px 7px 7px; */
+    background-image: url("../img/png/regresa.png");
+    /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    /* margin-left: 20px; */
+    margin: 0px 0px 0px 10px;
+    border-radius: 25px;
+    -moz-box-shadow: inset 0 0 10px #1D64A6;
+    -webkit-box-shadow: inset 0 0 10px #1D64A6;
+    box-shadow: inset 0 0 10px #218aa1;
+}
+
+.indice::after {
+    content: "regresa✨ ";
+}
+
+.consigna {
+    margin-left: 20px;
+}
+
+.consigna::before {
+    content: "🥁 consigna";
+}
+
+.resultados {
+    background-color: brown;
+    color: bisque;
+    z-index: -1;
+}
+
+label {
+    margin-left: 20px;
+}
+
+/* todo: Ventana modal */
+.modal {
+    background-image: url(../img/logoraul.jpg);
+    width: 404px;
+    height: 404px;
+    padding: 15px 0 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.abre-modal {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+.margin-ayuda {
+    /* padding-top: 10px; */
+    margin-top: 327px;
+    margin-left: 3px;
+}
+
+.cerrar-modal {
+    float: right;
+    margin-right: 10px;
+    margin-top: 303px;
+}
+
+.modal h3 {
+    background-color: transparent;
+    margin-top: -12px;
+    width: 151px;
+    text-align: center;
+}
+
+.margen-derecho {
+    text-align: right;
+    font-size: 22px;
+    /* background-color: antiquewhite; */
+}
+
+.agrega-pesos li::after {
+    content: "u$s";
+}
+
+.agrega-pesos li::before {
+    content: "Factura N💫 ";
+} 
+
+.persona {
+    background-color: blanchedalmond;
+    color: brown;
+}
+
+.url-prueba {
+    background-color: pink;
+};
+
+.tamano-caja {
+    width: 300px;
+}
+
+.indice-principal li {
+    clear: left;
+    display: block;
+    width: 250px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.indice-principal li:hover{
+    margin-left: 50px;
+    font-size: 22px;
+}
+
+/*  pares = even */
+
+li:nth-child(even) {
+    background-color:rgb(114, 230, 149);
+    /* color: yellow; */
+}
+
+/* impares = odd */
+li:nth-child(odd) {
+    background-color: yellow;
+    color: blue;
+} 
+
+.tabla-orden {
+    font-size: 24px;
+}
+
+li:hover {
+    font-size: 22px;
+    font-family:cursive;
+    color: red;
+    cursor: pointer;
+}
+
+.tabla-orden li:nth-child(even) {
+    background-color: rgb(245, 209, 109);
+}
+
+.mi-indice li {
+    display: inline-block;
+    width: 150px;
+}

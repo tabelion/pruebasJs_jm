@@ -1,0 +1,709 @@
+<!-- 🔵 ======================================== 🔷
+#   🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+#   🔵  Empresa: Industrias de Software Vipescri  🔷
+#   🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#    🔵 ======================================== 🔷 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios en JS</title>
+    <!-- entre 55 y 65 caracteres para el titulo -->
+    <meta name="description" content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
+    <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
+    <link type="text/css" rel="stylesheet" href="./css/stylo_first.css">
+    <!-- html5 <script src="basicos.js" type="text/javascript"></script> mejor al final del body -->
+    
+</head>
+<body>
+    <h1>💥 Ejercicio en JavaScript 💥</h1>
+    <!-- 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ #️⃣ -->
+    <h2 id="inicio">🟢  Indice  🟢</h2>
+    <main class="indice-principal">
+        <ul>
+            <li><a href="#ejemplo01">🔷 Ejercicio 1  🔷</a></li>
+            <li><a href="#ejemplo02">🔶 Ejercicio 2  🔶</a></li>
+            <li><a href="#ejemplo03">🔷 Ejercicio 3  🔷</a></li>
+            <li><a href="#ejemplo04">🔶 Ejercicio 4  🔶</a></li>
+            <li><a href="#ejemplo05">🔷 Ejercicio 5  🔷</a></li>
+            <li><a href="#ejemplo06">🔶 Ejercicio 6  🔶</a></li>
+            <li><a href="#ejemplo07">🔷 Ejercicio 7  🔷</a></li>
+            <li><a href="#ejemplo08">🔶 Ejercicio 8  🔶</a></li>
+            <li><a href="#ejemplo09">🔷 Ejercicio 9  🔷</a></li>
+            <li><a href="#ejemplo10">🔶 Ejercicio 10 🔶</a></li>
+            <li><a href="#ejemplo11">🔷 Ejercicio 11 🔷</a></li>
+            <li><a href="#ejemplo12">🔶 Ejercicio 12 🔶</a></li>
+            <li><a href="#ejemplo13">🔷 Ejercicio 13 🔷</a></li>
+            <li><a href="#ejemplo14">🔶 Ejercicio 14 🔶</a></li>
+            <li><a href="#ejemplo15">🔷 Ejercicio 15 🔷</a></li>
+            <li><a href="#ejemplo16">🔶 Ejercicio 16 🔶</a></li>
+            <li><a href="#ejemplo17">🔷 Ejercicio 17 🔷</a></li>
+            <li><a href="#ejemplo18">🔶 Ejercicio 18 🔶</a></li>
+            <li><a href="#ejemplo19">🔷 Ejercicio 19 🔷</a></li>
+            <li><a href="#ejemplo20">🔶 Ejercicio 20 🔶</a></li>
+            <li><a href="#ejemplo21">🔷 Ejercicio 21 🔷</a></li>
+            <li><a href="#ejemplo22">🔶 Ejercicio 22 🔶</a></li>
+            <li><a href="#ejemplo23">🔷 Ejercicio 23 🔷</a></li>
+            <li><a href="#ejemplo24">🔶 Ejercicio 24 🔶</a></li>
+            <li><a href="#ejemplo25">🔷 Ejercicio 25 🔷</a></li>
+            <li><a href="#ejemplo26">🔶 Ejercicio 26 🔶</a></li>
+            <li><a href="#ejemplo27">🔷 Ejercicio 27 🔷</a></li>
+        </ul>
+    </main>
+    <br><br><br><br><br><br><br>
+    <!-- ! ejercicio #️⃣1️⃣ -->
+    <h2 id="ejemplo05" onclick="ejercicio01()">🟢 Ejercicio JavaScript Nº #️⃣1️⃣ 🟢</h2>
+    <br><br>
+    <div class="boton">
+        <a href="http://127.0.0.1:5500/curso_jonmircha/ejerciciojm.html">⤴️</a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programar una funcion que cuente el numero de caracteres de una cadena de texto, 
+        pe.miFuncion("Hola Raul"); 
+        devuelve cantida de cacacteres ej 5
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato1">Cadena</label>
+        <input type="text" name="dato1" id="dato1">
+    </section>
+    <br><br>
+    <div id="muestraEj01"></div>
+
+    <!-- ! ejercicio #️⃣2️⃣ -->
+    <h2 id="ejemplo02" onclick="ejercicio02()">🟢 Ejercicio JavaScript Nº #️⃣2️⃣ 🟢</h2>
+    <br><br>
+    <div class="boton">
+        <a href="http://127.0.0.1:5500/curso_jonmircha/ejerciciojm.html">🟢</a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programar un funcion de devuelva el texto recortado segun el numero de caracteres indicado
+        pe.miFuncion("Hello! Nice to meet you") 
+        devuelve 5 primeros caracteres
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato2">Cadena</label>
+        <input type="text" name="dato2" id="dato2">
+    </section>
+    <br><br>
+    <div id="muestraEj02"></div>
+
+    <!-- ! ejercicio #️⃣3️⃣ -->
+    <h2 id="ejemplo03" onclick="ejercicio03()">🟢 Ejercicio JavaScript Nº #️⃣3️⃣ 🟢</h2>
+    <br><br>
+    <div class="boton regresa">
+        <a href="http://127.0.0.1:5500/curso_jonmircha/ejerciciojm.html">⏫</a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dada un string devuelva un array de textos separados por cierto caractere
+        pe.miFuncion("i am a happy lucky guy")  
+        devuelve [Hello], [Nice], [to], [meet], [you]
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato3">Cadena</label>
+        <input type="text" name="dato3" id="dato3">
+    </section>
+    <!--  onkeypress="ejercicio03()" -->
+    <br><br>
+    <div>
+        <ol type="1" id="muestraEj03">
+        </ol>
+    </div>
+
+    <!-- ! ejercicio #️⃣4️⃣ -->
+    <h2 id="ejemplo04" onclick="ejercicio04()">🟢 Ejercicio JavaScript Nº #️⃣4️⃣ 🟢</h2>
+    <br><br>
+    <div class="boton regresa">
+        <a href="#" onClick="inicio()" title="Indice">
+            <img src="./img/png/regresa.png" width="40px" height="40px" alt="Regresa">
+        </a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que repita el texto x veces.
+        pe.miFuncion("Hello! Raul",3) 
+        devuelve Hello! Raul Hello! Raul Hello! Raul
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato4">Cadena</label>
+        <input type="text" name="dato4" id="dato4">
+    </section>
+    <!--  onkeypress="ejercicio04()" -->
+    <br><br>
+    <div id="muestraEj04"></div>
+
+    <!-- ! ejercicio #️⃣5️⃣ -->
+    <h2 id="ejemplo05" onclick="ejercicio05()">🟢 Ejercicio JavaScript Nº #️⃣5️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que invierta las palabras de una cadena
+        pe.miFuncion(Hello! word)
+        devuelve drow !olleH
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato5">Cadena</label>
+        <input type="text" name="dato5" id="dato5">
+    </section>
+    <br><br>
+    <div id="muestraEj05"></div>
+
+    <!-- ! ejercicio #️⃣6️⃣ -->
+    <h2 id="ejemplo06" onclick="ejercicio06()">🟢 Ejercicio JavaScript Nº #️⃣6️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion para contar el numero de veces que se repite una palabra en un texto largo
+        pe.miFuncion(Hola mundo adios mundo )    
+        devuelve 2
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato6">Cadena</label>
+        <input type="text" name="dato6" id="dato6">
+    </section>
+    <br><br>
+    <div id="muestraEj06"></div>
+
+    <!-- ! ejercicio #️⃣7️⃣  -->
+    <h2 id="ejemplo07" onclick="ejercicio07()">🟢 Ejercicio JavaScript Nº #️⃣7️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que valide si una palabra o frace dada, es un palindromo (que se lee iguan en un sentido o en otro)
+        pe.miFuncion("salas") 
+        devuelve true
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato07">Cadena</label>
+        <input type="text" name="dato07" id="dato07">
+    </section>
+    <br><br>
+    <div id="muestraEj0"></div>
+    
+
+    <!-- ! ejercicio #️⃣8️⃣  -->
+    <h2 id="ejemplo08" onclick="ejercicio08()">🟢 Ejercicio JavaScript Nº #️⃣8️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que elimine cierto patron de caracteres de un texto dado.
+        pe.miFuncion("xyz1", "xyz2", "xyz3", "xyz4", "xyz5", "xyz");
+        vevuelve 1,2,3,4,5
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato8">Cadena</label>
+        <input type="text" name="dato8" id="dato8">
+    </section>
+    <br><br>
+    <div id="muestraEj08"></div>
+    
+
+    <!-- ! ejercicio #️⃣9️⃣  -->
+    <h2 id="ejemplo09" onclick="ejercicio09()">🟢 Ejercicio JavaScript Nº #️⃣9️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que obtenga un nuemero aleatorio entre 501 y 600
+        devuelve ...entre 501 y 600
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato9">Cadena</label>
+        <input type="text" name="dato9" id="dato9">
+    </section>
+    <br><br>
+    <div id="muestraEj09"></div>
+   
+
+    <!-- ! ejercicio 1️⃣0️⃣ -->
+    <h2 id="ejemplo10" onclick="ejercicio10()">🟢 Ejercicio JavaScript Nº 1️⃣0️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que reciba un numero y evalue si es capicua o no 
+        pe.miFuncion(2002)
+        devuelve true
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato10">Cadena</label>
+        <input type="text" name="dato10" id="dato10">
+    </section>
+    <br><br>
+    <div id="muestraEj10"></div>
+ 
+
+    <!-- ! ejercicio 1️⃣1️⃣ -->
+    <h2 id="ejemplo11" onclick="ejercicio11()">🟢 Ejercicio JavaScript Nº 1️⃣1️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que calcule el factorial de un entero (El factorial de un entero positivo n se define como el producgto de todos los numeros enteros positivos desde 1 hasta n)
+        pe.miFuncion(5) 
+        devuelve 120
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato11">Cadena</label>
+        <input type="text" name="dato11" id="dato11">
+    </section>
+    <br><br>
+    <div id="muestraEj11"></div>
+
+    <!-- ! ejercicio 1️⃣2️⃣ -->
+    <h2 id="ejemplo12" onclick="ejercicio12()">🟢 Ejercicio JavaScript Nº 1️⃣2️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que determine si un nuemero es primo (aquel que solo se divide por si mismo y 1)
+        pe.miFuncion(7) 
+        devuelve true
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato12">Cadena</label>
+        <input type="text" name="dato12" id="dato12">
+    </section>
+    <br><br>
+    <div id="muestraEj12"></div>
+
+    <!-- ! ejercicio 1️⃣3️⃣ -->
+    <h2 id="ejemplo13" onclick="ejercicio13()">🟢 Ejercicio JavaScript Nº 1️⃣3️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que determine si un numero es par o impar
+        pe.miFuncion(29) 
+        devuelve impar
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato13">Cadena</label>
+        <input type="text" name="dato13" id="dato13">
+    </section>
+    <br><br>
+    <div id="muestraEj13"></div>
+
+    <!-- ! ejercicio 1️⃣4️⃣ -->
+    <h2 id="ejemplo14" onclick="ejercicio14()">🟢 Ejercicio JavaScript Nº 1️⃣4️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion para convertir grados Celsius a Fahrenhit y viceversa
+        pe.miFuncion(0,"C") 
+        devuelve 32ºF
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato14">Cadena</label>
+        <input type="text" name="dato14" id="dato14">
+    </section>
+    <br><br>
+    <div id="muestraEj14"></div>
+
+    <!-- ! ejercicio 1️⃣5️⃣ -->
+    <h2 id="ejemplo15" onclick="ejercicio15()">🟢 Ejercicio JavaScript Nº 1️⃣5️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion para convertir numero de base binaria a decimal y vicebersa
+        pe.miFuncion(100,2) 
+        devuelve 4 base 10
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato15">Cadena</label>
+        <input type="text" name="dato15" id="dato15">
+    </section>
+    <br><br>
+    <div id="muestraEj15"></div>
+
+    <!-- ! ejercicio 1️⃣6️⃣ -->
+    <h2 id="ejemplo16" onclick="ejercicio16()">🟢 Ejercicio JavaScript Nº 1️⃣6️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que devuelve el monto fionaldespues de aplicar un descuento a una cantidad dada
+        pe.miFuncion(1000,20) 
+        devuelve 800
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato16">Cadena</label>
+        <input type="text" name="dato16" id="dato16">
+    </section>
+    <br><br>
+    <div id="muestraEj16"></div>
+ 
+    <!-- ! ejercicio 1️⃣7️⃣ -->
+    <h2 id="ejemplo17" onclick="ejercicio17()">🟢 Ejercicio JavaScript Nº 1️⃣7️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dada una fecha valida determine cuantos años han pasado hasta el dia de hoy
+        pe.miFuncion(1984,4,23) 
+        devuelve 38 al 2023/03
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato17">Cadena</label>
+        <input type="text" name="dato17" id="dato17">
+    </section>
+    <br><br>
+    <div id="muestraEj17"></div>
+
+    <!-- ! ejercicio 1️⃣8️⃣ -->
+    <h2 id="ejemplo18" onclick="ejercicio18()">🟢 Ejercicio JavaScript Nº 1️⃣8️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dado una cadena de texto cuente el numero de vocales y consonantes
+        pe.miFuncion("Hola Raul") 
+        devuelve 4 vocales y 4 consonantes
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato18">Cadena</label>
+        <input type="text" name="dato18" id="dato18">
+    </section>
+    <br><br>
+    <div id="muestraEj18"></div>
+ 
+    <!-- ! ejercicio 1️⃣9️⃣ -->
+    <h2 id="ejemplo19" onclick="ejercicio19()">🟢 Ejercicio JavaScript Nº 1️⃣9️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que valide que un texto sea un nombre valido
+        pe.miFuncion("Raul Villalba") 
+        devuelve true
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato19">Cadena</label>
+        <input type="text" name="dato19" id="dato19">
+    </section>
+    <br><br>
+    <div id="muestraEj19"></div>
+ 
+    <!-- ! ejercicio 2️⃣0️⃣ -->
+    <h2 id="ejemplo20" onclick="ejercicio20()">🟢 Ejercicio JavaScript Nº 2️⃣0️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que valide que un texto es un emal
+        pe.miFuncion("vipescri@gmail.com") 
+        devuelve true
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato20">Cadena</label>
+        <input type="text" name="dato20" id="dato20">
+    </section>
+    <br><br>
+    <div id="muestraEj20"></div>
+ 
+    <!-- ! ejercicio 2️⃣1️⃣  -->
+    <h2 id="ejemplo21" onclick="ejercicio21()">🟢 Ejercicio JavaScript Nº 2️⃣1️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dado un array numerico devuelve otro con los numeros elevadoas al cuadrado
+        pe.miFuncion(1,4,5) 
+        devuelve 1,16,25
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato21">Cadena</label>
+        <input type="text" name="dato21" id="dato21">
+    </section>
+    <br><br>
+    <div id="muestraEj21"></div>
+
+    <!-- ! ejercicio 2️⃣2️⃣ -->
+    <h2 id="ejemplo22" onclick="ejercicio22()">🟢 Ejercicio JavaScript Nº 2️⃣2️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dado un array numerico devuelve otro array con el numero mas alto y el mas bajo 
+        pe.miFuncion(1,4,5,99,-60) 
+        devuelve 99,-60
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato22">Cadena</label>
+        <input type="text" name="dato22" id="dato22">
+    </section>
+    <br><br>
+    <div id="muestraEj22"></div>
+ 
+    <!-- ! ejercicio 2️⃣3️⃣ -->
+    <h2 id="ejemplo23" onclick="ejercicio23()">🟢 Ejercicio JavaScript Nº 2️⃣3️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dado un array de numeros devuelve un objeto con 2 arreglos en el primero almacena los numeros pares y en el siguiente los impares
+        pe.miFuncion(1,2,3,4,5,6,7,8,9,10,11,12,13,14) 
+        devuelve pares: [2,4,6,8,10,12,14] impares: [1,3,5,7,9,11,13]
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato23">Cadena</label>
+        <input type="text" name="dato23" id="dato23">
+    </section>
+    <br><br>
+    <div id="muestraEj23"></div>
+    <div id="muestraEj23b"></div>
+ 
+    <!-- ! ejercicio 2️⃣4️⃣ -->
+    <h2 id="ejemplo24" onclick="ejercicio24()">🟢 Ejercicio JavaScript Nº 2️⃣4️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que...
+        pe.miFuncion(Hello! word)
+        devuelve ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato24">Cadena</label>
+        <input type="text" name="dato24" id="dato24">
+    </section>
+    <br><br>
+    <div id="muestraEj24"></div>
+
+    <!-- ! ejercicio 2️⃣5️⃣ -->
+    <h2 id="ejemplo25" onclick="ejercicio25()">🟢 Ejercicio JavaScript Nº 2️⃣5️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dado un arreglo de elementos, elimine los duplicados
+        pe.miFuncion("x",10,"x",2,"10",true,true) 
+        devuelve ["x",10,2,"10",true]
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato25">Cadena</label>
+        <input type="text" name="dato25" id="dato25">
+    </section>
+    <br><br>
+    <div id="muestraEj25"></div>
+ 
+    <!-- ! ejercicio 2️⃣6️⃣ -->
+    <h2 id="ejemplo26" onclick="ejercicio26()">🟢 Ejercicio JavaScript Nº 2️⃣6️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que dado un arreglo de numeros obtenga el promedio
+        pe.miFuncion(9,8,7,6,5,4,3,2,1,0) 
+        devuelve 4.5 
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato26">Cadena</label>
+        <input type="text" name="dato26" id="dato26">
+    </section>
+    <br><br>
+    <div id="muestraEj26"></div>
+
+    <!-- ! ejercicio 2️⃣7️⃣ -->
+    <h2 id="ejemplo27" onclick="ejercicio27()">🟢 Ejercicio JavaScript Nº 2️⃣7️⃣ 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una clase llamada pelicula
+        la clase recibe un objeto al momento de instanciarse con los siguientes datos:
+        id, titulo, director, año de extreno, pais origen, genero y calificacion.
+        - Todos los datos son obligaorios
+        - Valida que el id tenga 9 caracteres (los 2 primeros letras y los restantes numeros)
+        - Valida que el titulo no rebase los 100 caracteres
+        - Valida que el director no rebase los 50 caracteres
+        - Valida que el año sea de 4 digitos
+        - Valida que el pais o paices sea en forma de arreglo
+        - Valida que el genero sea en forma de arreglo
+        - Valida que el genero sea dentro de los generos aceptados.
+        - Crea un metodo estatico que devuelva los generos aceptados
+        - Valida que la calificacion sea un numero entre 0 y 10 pudiendo ser decimal de una posicion
+        - Crea un metodo que devuelva toda la ficha tecnica de la pelicula
+        - A partir de un arreglo con la informacion de 3 peliculas genera 3 instancias de la clase de forma automatizada e imprime la ficha tecnica de cada pelicula
+
+        * Generos aceptados: Action, Adult, Adventure, Animation, Biography, Comedy, Crime, Documentary, Drama, Family, Film Noir, Game-Show, History, Horror, Musical, Music, Mystery, News, Reality-TV, Romance, Sci-Fi, Short, Talk-Show, Thriller, War, Western. 
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato27">Cadena</label>
+        <input type="text" name="dato27" id="dato27">
+    </section>
+    <br><br>
+    <div id="muestraEj27"></div>
+ 
+    <!-- todo; continua... -->
+    <!-- ! ejercicio 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ #️⃣ 
+    <h2 id="ejemplo0" onclick="ejx()">🟢 Ejercicio Nº Final 🟢 </h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        Programa una funcion que...
+        pe.miFuncion(Hello! word)
+        devuelve ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato0">Cadena</label>
+        <input type="text" name="dato0" id="dato0">
+    </section>
+    <br><br>
+    <div id="muestraEj0"></div>
+    -->
+    <br>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- ✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶
+        ! a continuacion va/n la/s llamada/s a JavaScript 
+        <script src="./js/ej01.js" type="module"></script>
+    -->
+    <script src="./js/ejerciciojm.js"></script>
+</body>
+</html>
