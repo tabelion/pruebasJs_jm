@@ -131,8 +131,18 @@ function ejercicio05() {
 function ejercicio06() {
     let cadena = document.getElementById("dato6").value;
 
+    var separarCadena = cadena.split(" ");
+    let palabra = prompt("Digite cadena:");
+    if (!palabra) {
+        alert("debe digitar una palabra");
+        return;
+    };
+    let canti = 0;
+    for (let i = 0; i < separarCadena.length; i++) {
+        if (separarCadena[i] === palabra) canti++;
+    }
 
-    document.getElementById("muestraEj06").innerHTML = cadena;
+    document.getElementById("muestraEj06").innerHTML =`La cantidad de veces que existe esa palabra en el texto es ${canti}`;
 }
 
 // ==========================
