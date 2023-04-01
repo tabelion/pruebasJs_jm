@@ -42,11 +42,15 @@ const contarCaracteres = (cadena = "") =>
 // ==========================
 
 function ejercicio02() {
-    //let cadena = prompt("Digite cadena:");
     let cadena = document.getElementById("dato2").value;
-    let result = recortarCadena(cadena, cadena.search(" "));
-
-    console.info("resultado: " + result);
+    
+    if (!cadena) {
+        alert("Debe digitar un texto: ");
+        return;
+    }    
+    
+    let canti = prompt("Digite cuantos caracters quiere mostrar:");
+    let result = recortarCadena(cadena, canti);
 
     document.getElementById("muestraEj02").innerHTML = `Repuesta:  ${result}`; 
 }
@@ -54,9 +58,9 @@ function ejercicio02() {
 
 // con arrow function
 const recortarCadena = (cadena = "", longitud = undefined) => 
-(!cadena) 
-? `Ingrese una cadena de texto de mas de una palabra` 
-: `La primera palabra es ${cadena.slice(0,longitud)} `;
+(!longitud) 
+? `La primera palabra es ${cadena.slice(0,cadena.search(" "))}` 
+: `elegiste mostrar ${longitud} caracteres = ${cadena.slice(0,longitud)}`;
 
 // otra forma
 const buscaCaracter = (texto) => {
@@ -98,30 +102,41 @@ function ejercicio03() {
 // ==========================
 // todo: ejercicio 4
 // ==========================
+function ejercicio04() {
+    let cadena = document.getElementById("dato4").value;
+    if (typeof cadena !== "string" || cadena.length === 0) {
+        alert("No ingresaste ningun texto");
+        console.warn("No ingresaste ninguna cadena");
+        return
+    } 
+    
+    let canti = prompt("Digite cantidad de veces que repite el texto:");
+    if (!canti) canti = 2;
+    let ul4 = ``;
+    for (let i = 1; i <= canti; i++) {
+        ul4 += `<li> ${i} 💫 ${cadena} </li>`;
+    }
 
+    document.getElementById("muestraEj04").innerHTML = ul4;
+}
 
 // ==========================
 // todo: ejercicio 5
 // ==========================
 
 function ejercicio05() {
-    //let cadena = prompt("Digite cadena:");
     let cadena = document.getElementById("dato5").value;
 
     if (typeof cadena !== "string" || cadena.length === 0) {
-        cadena = "soy un tipo feliz y afortunado";
+        alert("No ingresaste ningun texto");
         console.warn("No ingresaste ninguna cadena");
+        return
     } 
 
-    // Dividiendo la cadena "mensaje" usando el carácter espacio
-    let arreglo = cadena.split(' ');
-    
-    let ul5 = ``;
-    arreglo.forEach((elem, indi) => {
-        ul5 += `<li> ${indi+1} ⏩ ${elem} </li>`;
-    });
-    
-    document.getElementById("muestraEj05").innerHTML = ul5;
+    let separarCadena = cadena.split("");
+    let inviertCadena = separarCadena.reverse().join("");
+
+    document.getElementById("muestraEj05").innerHTML = inviertCadena;
 }
 
 // ==========================
@@ -132,11 +147,12 @@ function ejercicio06() {
     let cadena = document.getElementById("dato6").value;
 
     var separarCadena = cadena.split(" ");
-    let palabra = prompt("Digite cadena:");
+    let palabra = prompt("Digite palabra a buscar:");
     if (!palabra) {
         alert("debe digitar una palabra");
         return;
     };
+
     let canti = 0;
     for (let i = 0; i < separarCadena.length; i++) {
         if (separarCadena[i] === palabra) canti++;
@@ -145,17 +161,43 @@ function ejercicio06() {
     document.getElementById("muestraEj06").innerHTML =`La cantidad de veces que existe esa palabra en el texto es ${canti}`;
 }
 
+//document.write(array_word(palabra,array))
+
 // ==========================
 // todo: ejercicio 7
 // ==========================
 
 function ejercicio07() {
     let cadena = document.getElementById("dato7").value;
+    if (typeof cadena !== "string" || cadena.length < 3) {
+        alert("No ingresaste ninguna palabra");
+        console.warn("No ingresaste ninguna palabra");
+        return
+    } 
+    
+    //let palabra = (cadena.search > 0) ? cadena : cadena.split(" ");
 
+    //alert("Palabra: " + palabra + " " + cadena);
 
-    document.getElementById("muestraEj07").innerHTML = cadena;
+    let separarCadena = cadena.split("");
+    let inviertCadena = separarCadena.reverse().join("");
+
+    let resul = (cadena === inviertCadena) ? `es un polidromo` : `No es un polidromo`
+
+    document.getElementById("muestraEj07").innerHTML = `La palabra ${palabra}  ${resul}`;
 }
-
+/*
+'Esto es una cadena'.includes('a'); // true
+'Esto es una cadena'.includes('i'); // false
+------------
+'Esto es una cadena'.lastIndexOf('E'); // 0
+'Esto es una cadena'.lastIndexOf('a'); // 17
+'Esto es una cadena'.lastIndexOf('z'); // -1
+-----------------
+'Esto es una cadena'.search('E'); // 0
+'Esto es una cadena'.search('o'); // 4
+'Esto es una cadena'.search('z'); // -1
+*/
 // ==========================
 // todo: ejercicio 8
 // ==========================

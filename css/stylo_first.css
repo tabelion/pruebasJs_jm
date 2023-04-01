@@ -128,8 +128,8 @@ img {
     margin: 0px 0px 0px 0px;
 }
 
-.indice a{
-    /* padding: 7px 7px 7px 7px; */
+.indice a {
+    text-decoration: none;
     background-image: url("../img/png/regresa.png");
     /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
     background-repeat: no-repeat;
@@ -232,6 +232,7 @@ label {
 
 .indice-principal li {
     clear: left;
+    text-decoration: none;
     display: block;
     width: 250px;
     font-size: 22px;
