@@ -90,6 +90,19 @@ img {
     top: 200px;
 }
 
+.numero {
+    text-align: right;
+    color: red;
+    /* width: 55px; */
+    max-width: 101px;
+} 
+
+.opciones {
+    margin-left: 20px; 
+    background-color: bisque; 
+    display:inline-block;
+} 
+    
 
 /* todo: boton */
 .boton a {
@@ -234,27 +247,33 @@ label {
     clear: left;
     text-decoration: none;
     display: block;
+    /* display: inline-block; */
     width: 250px;
     font-size: 22px;
     text-align: center;
     border-radius: 15px;
 }
 
+section input[type="text"] {
+    width: 300px;
+}
+
 .indice-principal li:hover{
     margin-left: 50px;
     font-size: 22px;
+    /* text-decoration: none; */
 }
 
 /*  pares = even */
 
 li:nth-child(even) {
-    background-color:rgb(114, 230, 149);
     /* color: yellow; */
+    background-color: yellow;
 }
 
 /* impares = odd */
 li:nth-child(odd) {
-    background-color: yellow;
+    background-color:rgb(114, 230, 149);
     color: blue;
 } 
 
@@ -276,4 +295,13 @@ li:hover {
 .mi-indice li {
     display: inline-block;
     width: 150px;
+}
+
+.resultado {
+    background-color: #f2f2f2;;
+    color:coral; 
+    font: 16px Verdana;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 2px 11px 2px 11px;
 }

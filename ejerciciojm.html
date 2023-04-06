@@ -73,7 +73,7 @@
         <input type="text" name="dato1" id="dato1">
     </section>
     <br><br>
-    <div id="muestraEj01"></div>
+    <section class="resultado" id="muestraEj01"></section>
 
     <!-- ! ejercicio #️⃣2️⃣ -->
     <h2 id="ejemplo02" onclick="ejercicio02()">🟢 Ejercicio JavaScript Nº #️⃣2️⃣ 🟢</h2>
@@ -95,7 +95,7 @@
         <input type="text" name="dato2" id="dato2">
     </section>
     <br><br>
-    <div id="muestraEj02"></div>
+    <section class="resultado" id="muestraEj02"></section>
 
     <!-- ! ejercicio #️⃣3️⃣ -->
     <h2 id="ejemplo03" onclick="ejercicio03()">🟢 Ejercicio JavaScript Nº #️⃣3️⃣ 🟢</h2>
@@ -118,10 +118,10 @@
     </section>
     <!--  onkeypress="ejercicio03()" -->
     <br><br>
-    <div>
+    <section class="resultado">
         <ol type="1" id="muestraEj03">
         </ol>
-    </div>
+    </section>
 
     <!-- ! ejercicio #️⃣4️⃣ -->
     <h2 id="ejemplo04" onclick="ejercicio04()">🟢 Ejercicio JavaScript Nº #️⃣4️⃣ 🟢</h2>
@@ -146,7 +146,7 @@
     </section>
     <!--  onkeypress="ejercicio04()" -->
     <br><br>
-    <div id="muestraEj04"></div>
+    <section class="resultado" id="muestraEj04"></section>
 
     <!-- ! ejercicio #️⃣5️⃣ -->
     <h2 id="ejemplo05" onclick="ejercicio05()">🟢 Ejercicio JavaScript Nº #️⃣5️⃣ 🟢</h2>
@@ -168,7 +168,7 @@
         <input type="text" name="dato5" id="dato5">
     </section>
     <br><br>
-    <div id="muestraEj05"></div>
+    <section class="resultado" id="muestraEj05"></section>
 
     <!-- ! ejercicio #️⃣6️⃣ -->
     <h2 id="ejemplo06" onclick="ejercicio06()">🟢 Ejercicio JavaScript Nº #️⃣6️⃣ 🟢</h2>
@@ -190,11 +190,11 @@
         <input type="text" name="dato6" id="dato6">
     </section>
     <br><br>
-    <div id="muestraEj06"></div>
+    <section class="resultado" id="muestraEj06"></section>
     <!-- <div id="muestraEj06b"></div> -->
 
     <!-- ! ejercicio #️⃣7️⃣  -->
-    <h2 id="ejemplo07" onclick="ejercicio07()">🟢 Ejercicio JavaScript Nº #️⃣7️⃣ 🟢 </h2>
+    <h2 id="ejemplo07" onclick="ejercicio07()">🟢 Ejercicio JavaScript Nº #️⃣7️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -213,11 +213,11 @@
         <input type="text" name="dato7" id="dato7">
     </section>
     <br><br>
-    <div id="muestraEj07"></div>
+    <section class="resultado" id="muestraEj07"></section>
     
 
     <!-- ! ejercicio #️⃣8️⃣  -->
-    <h2 id="ejemplo08" onclick="ejercicio08()">🟢 Ejercicio JavaScript Nº #️⃣8️⃣ 🟢 </h2>
+    <h2 id="ejemplo08" onclick="ejercicio08()">🟢 Ejercicio JavaScript Nº #️⃣8️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -226,21 +226,21 @@
     <p class="consigna">
     <pre>
         Programa una funcion que elimine cierto patron de caracteres de un texto dado.
-        pe.miFuncion("xyz1", "xyz2", "xyz3", "xyz4", "xyz5", "xyz");
+        pe.miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
         vevuelve 1,2,3,4,5
     </pre>
     </p>
     <hr width="80%"><br>
     <section>
         <label for="dato8">Cadena</label>
-        <input type="text" name="dato8" id="dato8">
+        <input type="text" name="dato8" id="dato8" value="xyz1, xyz2, xyz3, xyz4 y xyz5" style="width: 200px;">
     </section>
     <br><br>
-    <div id="muestraEj08"></div>
+    <section class="resultado" id="muestraEj08"></section>
     
 
     <!-- ! ejercicio #️⃣9️⃣  -->
-    <h2 id="ejemplo09" onclick="ejercicio09()">🟢 Ejercicio JavaScript Nº #️⃣9️⃣ 🟢 </h2>
+    <h2 id="ejemplo09" onclick="ejercicio09()">🟢 Ejercicio JavaScript Nº #️⃣9️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -248,21 +248,23 @@
     <br><hr width="80%">
     <p class="consigna">
     <pre>
-        Programa una funcion que obtenga un nuemero aleatorio entre 501 y 600
+        Programa una funcion que obtenga un numero aleatorio entre 501 y 600
         devuelve ...entre 501 y 600
     </pre>
     </p>
     <hr width="80%"><br>
     <section>
-        <label for="dato9">Cadena</label>
-        <input type="text" name="dato9" id="dato9">
+        <label for="dato9">Rango de Numero desde </label>
+        <input type="text" class="numero" name="dato9" id="dato9" value="500">
+        <label for="dato9b">hasta</label>
+        <input type="text" class="numero" name="dato9b" id="dato9b" value="1000">
     </section>
     <br><br>
-    <div id="muestraEj09"></div>
-   
+    <section class="resultado" id="muestraEj09"></section>
+
 
     <!-- ! ejercicio 1️⃣0️⃣ -->
-    <h2 id="ejemplo10" onclick="ejercicio10()">🟢 Ejercicio JavaScript Nº 1️⃣0️⃣ 🟢 </h2>
+    <h2 id="ejemplo10" onclick="ejercicio10()">🟢 Ejercicio JavaScript Nº 1️⃣0️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -278,36 +280,35 @@
     <hr width="80%"><br>
     <section>
         <label for="dato10">Cadena</label>
-        <input type="text" name="dato10" id="dato10">
+        <input type="text" class="numero" name="dato10" id="dato10" value="101">
     </section>
     <br><br>
-    <div id="muestraEj10"></div>
+    <section class="resultado" id="muestraEj10"></section>
  
 
     <!-- ! ejercicio 1️⃣1️⃣ -->
-    <h2 id="ejemplo11" onclick="ejercicio11()">🟢 Ejercicio JavaScript Nº 1️⃣1️⃣ 🟢 </h2>
+    <h2 id="ejemplo11" onclick="ejercicio11()">🟢 Ejercicio JavaScript Nº 1️⃣1️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        Programa una funcion que calcule el factorial de un entero (El factorial de un entero positivo n se define como el producgto de todos los numeros enteros positivos desde 1 hasta n)
-        pe.miFuncion(5) 
-        devuelve 120
-    </pre>
+    <p class="consigna"><br>
+        Programa una funcion que calcule el factorial de un entero (El factorial de un entero positivo n se define como el producto de todos los numeros enteros positivos desde 1 hasta n) <br>
+        pe.miFuncion(5) <br>
+        devuelve 120    
+    
     </p>
     <hr width="80%"><br>
     <section>
         <label for="dato11">Cadena</label>
-        <input type="text" name="dato11" id="dato11">
+        <input type="text" class="numero" name="dato11" id="dato11" value="5">
     </section>
     <br><br>
-    <div id="muestraEj11"></div>
+    <section class="resultado" id="muestraEj11"></section>
 
     <!-- ! ejercicio 1️⃣2️⃣ -->
-    <h2 id="ejemplo12" onclick="ejercicio12()">🟢 Ejercicio JavaScript Nº 1️⃣2️⃣ 🟢 </h2>
+    <h2 id="ejemplo12" onclick="ejercicio12()">🟢 Ejercicio JavaScript Nº 1️⃣2️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -315,7 +316,7 @@
     <br><hr width="80%">
     <p class="consigna">
     <pre>
-        Programa una funcion que determine si un nuemero es primo (aquel que solo se divide por si mismo y 1)
+        Programa una funcion que determine si un numero es primo (aquel que solo se divide por si mismo y 1)
         pe.miFuncion(7) 
         devuelve true
     </pre>
@@ -323,13 +324,14 @@
     <hr width="80%"><br>
     <section>
         <label for="dato12">Cadena</label>
-        <input type="text" name="dato12" id="dato12">
+        <input type="text" class="numero" name="dato12" id="dato12">
     </section>
     <br><br>
-    <div id="muestraEj12"></div>
+    
+    <section class="resultado" id="muestraEj12"></section>
 
     <!-- ! ejercicio 1️⃣3️⃣ -->
-    <h2 id="ejemplo13" onclick="ejercicio13()">🟢 Ejercicio JavaScript Nº 1️⃣3️⃣ 🟢 </h2>
+    <h2 id="ejemplo13" onclick="ejercicio13()">🟢 Ejercicio JavaScript Nº 1️⃣3️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -345,13 +347,14 @@
     <hr width="80%"><br>
     <section>
         <label for="dato13">Cadena</label>
-        <input type="text" name="dato13" id="dato13">
+        <input type="text" class="numero" name="dato13" id="dato13">
     </section>
     <br><br>
-    <div id="muestraEj13"></div>
+    
+    <section class="resultado" id="muestraEj13"></section>
 
     <!-- ! ejercicio 1️⃣4️⃣ -->
-    <h2 id="ejemplo14" onclick="ejercicio14()">🟢 Ejercicio JavaScript Nº 1️⃣4️⃣ 🟢 </h2>
+    <h2 id="ejemplo14" onclick="ejercicio14()">🟢 Ejercicio JavaScript Nº 1️⃣4️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -367,13 +370,19 @@
     <hr width="80%"><br>
     <section>
         <label for="dato14">Cadena</label>
-        <input type="text" name="dato14" id="dato14">
+        <input type="text" class="numero" name="dato14" id="dato14">
+        <div class="opciones">Convertir a: </div>
+        <label for="celsius">Celsius</label>
+        <input type="radio" name="grado" id="celsius" value="celsius">
+        
+        <label for="farenheit">Farenheit</label>
+        <input type="radio" name="grado" id="frenheit" value="farenheit">
     </section>
     <br><br>
-    <div id="muestraEj14"></div>
+    <section class="resultado" id="muestraEj14"></section>
 
     <!-- ! ejercicio 1️⃣5️⃣ -->
-    <h2 id="ejemplo15" onclick="ejercicio15()">🟢 Ejercicio JavaScript Nº 1️⃣5️⃣ 🟢 </h2>
+    <h2 id="ejemplo15" onclick="ejercicio15()">🟢 Ejercicio JavaScript Nº 1️⃣5️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -389,13 +398,19 @@
     <hr width="80%"><br>
     <section>
         <label for="dato15">Cadena</label>
-        <input type="text" name="dato15" id="dato15">
+        <input type="text" class="numero" name="dato15" id="dato15" placeholder="ingrese un numero">
+        <div class="opciones">Convertir: </div>
+        <label for="binario">decimal a Binario</label>
+        <input type="radio" name="bindec" id="binario" value="binario" onclick="ejercicio15()">
+        
+        <label for="decimal">binario a Decimal</label>
+        <input type="radio" name="bindec" id="decimal" value="decimal" onclick="ejercicio15()">
     </section>
     <br><br>
-    <div id="muestraEj15"></div>
+    <section class="resultado" id="muestraEj15"></section>
 
     <!-- ! ejercicio 1️⃣6️⃣ -->
-    <h2 id="ejemplo16" onclick="ejercicio16()">🟢 Ejercicio JavaScript Nº 1️⃣6️⃣ 🟢 </h2>
+    <h2 id="ejemplo16" onclick="ejercicio16()">🟢 Ejercicio JavaScript Nº 1️⃣6️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -410,14 +425,16 @@
     </p>
     <hr width="80%"><br>
     <section>
-        <label for="dato16">Cadena</label>
-        <input type="text" name="dato16" id="dato16">
+        <label for="dato16">Importe $</label>
+        <input type="text" class="numero" name="dato16" id="dato16">
+        <label for="dato16b">% descuento</label>
+        <input type="text" class="numero" name="dato16b" id="dato16b">
     </section>
     <br><br>
-    <div id="muestraEj16"></div>
+    <section class="resultado" id="muestraEj16"></section>
  
     <!-- ! ejercicio 1️⃣7️⃣ -->
-    <h2 id="ejemplo17" onclick="ejercicio17()">🟢 Ejercicio JavaScript Nº 1️⃣7️⃣ 🟢 </h2>
+    <h2 id="ejemplo17" onclick="ejercicio17()">🟢 Ejercicio JavaScript Nº 1️⃣7️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -433,13 +450,13 @@
     <hr width="80%"><br>
     <section>
         <label for="dato17">Cadena</label>
-        <input type="text" name="dato17" id="dato17">
+        <input type="date" name="dato17" id="dato17" min="1928-01-31">
     </section>
     <br><br>
-    <div id="muestraEj17"></div>
+    <section class="resultado" id="muestraEj17"></section>
 
     <!-- ! ejercicio 1️⃣8️⃣ -->
-    <h2 id="ejemplo18" onclick="ejercicio18()">🟢 Ejercicio JavaScript Nº 1️⃣8️⃣ 🟢 </h2>
+    <h2 id="ejemplo18" onclick="ejercicio18()">🟢 Ejercicio JavaScript Nº 1️⃣8️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -458,10 +475,10 @@
         <input type="text" name="dato18" id="dato18">
     </section>
     <br><br>
-    <div id="muestraEj18"></div>
+    <section class="resultado" id="muestraEj18"></section>
  
     <!-- ! ejercicio 1️⃣9️⃣ -->
-    <h2 id="ejemplo19" onclick="ejercicio19()">🟢 Ejercicio JavaScript Nº 1️⃣9️⃣ 🟢 </h2>
+    <h2 id="ejemplo19" onclick="ejercicio19()">🟢 Ejercicio JavaScript Nº 1️⃣9️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -480,10 +497,10 @@
         <input type="text" name="dato19" id="dato19">
     </section>
     <br><br>
-    <div id="muestraEj19"></div>
+    <section class="resultado" id="muestraEj19"></section>
  
     <!-- ! ejercicio 2️⃣0️⃣ -->
-    <h2 id="ejemplo20" onclick="ejercicio20()">🟢 Ejercicio JavaScript Nº 2️⃣0️⃣ 🟢 </h2>
+    <h2 id="ejemplo20" onclick="ejercicio20()">🟢 Ejercicio JavaScript Nº 2️⃣0️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -502,10 +519,10 @@
         <input type="text" name="dato20" id="dato20">
     </section>
     <br><br>
-    <div id="muestraEj20"></div>
+    <section class="resultado" id="muestraEj20"></section>
  
     <!-- ! ejercicio 2️⃣1️⃣  -->
-    <h2 id="ejemplo21" onclick="ejercicio21()">🟢 Ejercicio JavaScript Nº 2️⃣1️⃣ 🟢 </h2>
+    <h2 id="ejemplo21" onclick="ejercicio21()">🟢 Ejercicio JavaScript Nº 2️⃣1️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -524,10 +541,10 @@
         <input type="text" name="dato21" id="dato21">
     </section>
     <br><br>
-    <div id="muestraEj21"></div>
+    <section class="resultado" id="muestraEj21"></section>
 
     <!-- ! ejercicio 2️⃣2️⃣ -->
-    <h2 id="ejemplo22" onclick="ejercicio22()">🟢 Ejercicio JavaScript Nº 2️⃣2️⃣ 🟢 </h2>
+    <h2 id="ejemplo22" onclick="ejercicio22()">🟢 Ejercicio JavaScript Nº 2️⃣2️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -546,10 +563,10 @@
         <input type="text" name="dato22" id="dato22">
     </section>
     <br><br>
-    <div id="muestraEj22"></div>
+    <section class="resultado" id="muestraEj22"></section>
  
     <!-- ! ejercicio 2️⃣3️⃣ -->
-    <h2 id="ejemplo23" onclick="ejercicio23()">🟢 Ejercicio JavaScript Nº 2️⃣3️⃣ 🟢 </h2>
+    <h2 id="ejemplo23" onclick="ejercicio23()">🟢 Ejercicio JavaScript Nº 2️⃣3️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -568,11 +585,11 @@
         <input type="text" name="dato23" id="dato23">
     </section>
     <br><br>
-    <div id="muestraEj23"></div>
-    <div id="muestraEj23b"></div>
+    <section class="resultado" id="muestraEj23"></section>
+    <section class="resultado" id="muestraEj23b"></section>
  
     <!-- ! ejercicio 2️⃣4️⃣ -->
-    <h2 id="ejemplo24" onclick="ejercicio24()">🟢 Ejercicio JavaScript Nº 2️⃣4️⃣ 🟢 </h2>
+    <h2 id="ejemplo24" onclick="ejercicio24()">🟢 Ejercicio JavaScript Nº 2️⃣4️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -591,10 +608,10 @@
         <input type="text" name="dato24" id="dato24">
     </section>
     <br><br>
-    <div id="muestraEj24"></div>
+    <section class="resultado" id="muestraEj24"></section>
 
     <!-- ! ejercicio 2️⃣5️⃣ -->
-    <h2 id="ejemplo25" onclick="ejercicio25()">🟢 Ejercicio JavaScript Nº 2️⃣5️⃣ 🟢 </h2>
+    <h2 id="ejemplo25" onclick="ejercicio25()">🟢 Ejercicio JavaScript Nº 2️⃣5️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -613,10 +630,10 @@
         <input type="text" name="dato25" id="dato25">
     </section>
     <br><br>
-    <div id="muestraEj25"></div>
+    <section class="resultado" id="muestraEj25"></section>
  
     <!-- ! ejercicio 2️⃣6️⃣ -->
-    <h2 id="ejemplo26" onclick="ejercicio26()">🟢 Ejercicio JavaScript Nº 2️⃣6️⃣ 🟢 </h2>
+    <h2 id="ejemplo26" onclick="ejercicio26()">🟢 Ejercicio JavaScript Nº 2️⃣6️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -635,10 +652,10 @@
         <input type="text" name="dato26" id="dato26">
     </section>
     <br><br>
-    <div id="muestraEj26"></div>
+    <section class="resultado" id="muestraEj26"></section>
 
     <!-- ! ejercicio 2️⃣7️⃣ -->
-    <h2 id="ejemplo27" onclick="ejercicio27()">🟢 Ejercicio JavaScript Nº 2️⃣7️⃣ 🟢 </h2>
+    <h2 id="ejemplo27" onclick="ejercicio27()">🟢 Ejercicio JavaScript Nº 2️⃣7️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -671,11 +688,11 @@
         <input type="text" name="dato27" id="dato27">
     </section>
     <br><br>
-    <div id="muestraEj27"></div>
+    <section class="resultado" id="muestraEj27"></section>
  
     <!-- todo; continua... -->
     <!-- ! ejercicio 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ #️⃣ 
-    <h2 id="ejemplo0" onclick="ejx()">🟢 Ejercicio Nº Final 🟢 </h2>
+    <h2 id="ejemplo0" onclick="ejx()">🟢 Ejercicio Nº Final 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -694,7 +711,7 @@
         <input type="text" name="dato0" id="dato0">
     </section>
     <br><br>
-    <div id="muestraEj0"></div>
+    <div class="resultado" id="muestraEj0"></div>
     -->
     <br>
     <hr>
