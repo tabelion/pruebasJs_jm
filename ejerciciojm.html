@@ -15,7 +15,11 @@
     <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
     <link type="text/css" rel="stylesheet" href="./css/stylo_first.css">
     <!-- html5 <script src="basicos.js" type="text/javascript"></script> mejor al final del body -->
-    
+    <script>
+        function enviar_formulario(){
+            document.formulario1.submit()
+        }
+    </script>
 </head>
 <body>
     <h1>💥 Ejercicio en JavaScript 💥</h1>
@@ -297,7 +301,6 @@
         Programa una funcion que calcule el factorial de un entero (El factorial de un entero positivo n se define como el producto de todos los numeros enteros positivos desde 1 hasta n) <br>
         pe.miFuncion(5) <br>
         devuelve 120    
-    
     </p>
     <hr width="80%"><br>
     <section>
@@ -516,7 +519,7 @@
     <hr width="80%"><br>
     <section>
         <label for="dato20">Cadena</label>
-        <input type="text" name="dato20" id="dato20">
+        <input type="email" name="dato20" id="dato20">
     </section>
     <br><br>
     <section class="resultado" id="muestraEj20"></section>
@@ -537,8 +540,8 @@
     </p>
     <hr width="80%"><br>
     <section>
-        <label for="dato21">Cadena</label>
-        <input type="text" name="dato21" id="dato21">
+        <label for="dato21">Cadena de numeros</label>
+        <input type="text" name="dato21" id="dato21" placeholder="ej 1,4,7,9,11">
     </section>
     <br><br>
     <section class="resultado" id="muestraEj21"></section>
@@ -559,8 +562,8 @@
     </p>
     <hr width="80%"><br>
     <section>
-        <label for="dato22">Cadena</label>
-        <input type="text" name="dato22" id="dato22">
+        <label for="dato22">Cadena de numeros</label>
+        <input type="text" name="dato22" id="dato22" placeholder="ej 1,14,7,-9,11">
     </section>
     <br><br>
     <section class="resultado" id="muestraEj22"></section>
@@ -581,8 +584,8 @@
     </p>
     <hr width="80%"><br>
     <section>
-        <label for="dato23">Cadena</label>
-        <input type="text" name="dato23" id="dato23">
+        <label for="dato23">Cadena de numeros</label>
+        <input type="text" name="dato23" id="dato23" >
     </section>
     <br><br>
     <section class="resultado" id="muestraEj23"></section>
@@ -604,7 +607,7 @@
     </p>
     <hr width="80%"><br>
     <section>
-        <label for="dato24">Cadena</label>
+        <label for="dato24">Cadena de numeros</label>
         <input type="text" name="dato24" id="dato24">
     </section>
     <br><br>
@@ -655,7 +658,7 @@
     <section class="resultado" id="muestraEj26"></section>
 
     <!-- ! ejercicio 2️⃣7️⃣ -->
-    <h2 id="ejemplo27" onclick="ejercicio27()">🟢 Ejercicio JavaScript Nº 2️⃣7️⃣ 🟢</h2>
+    <h2 id="ejemplo27" onclick="enviar_formulario()">🟢 Ejercicio JavaScript Nº 2️⃣7️⃣ 🟢</h2>
     <br><br>
     <div class="indice">
         <a href="#" onClick="inicio()" title="Indice"></a>
@@ -683,13 +686,103 @@
     </pre>
     </p>
     <hr width="80%"><br>
-    <section>
-        <label for="dato27">Cadena</label>
-        <input type="text" name="dato27" id="dato27">
-    </section>
+
+<!-- emet
+        header>nav>ul>li*5>a:link
+        target="_blank" rel="noopener noreferrer"
+        -->
+
+    <!-- <form action="ejercicio27()"> 
+        http://127.0.0.1:5500/curso_jonmircha/formpeli.php -->
+    <form action="http://127.0.0.1/misPruebas/pagina_destino.php" method=post name="formulario1" id="formulario1" target="frame_rejilla">    
+        <section>
+            <label for="idImdb">idIMDB</label>
+            <input type="text" name="idImdb" id="idImdb" placeholder="AA1234567" required>
+            <br>
+
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" id="titulo" placeholder="titulo" maxlength="100" required>
+            <br>
+
+            <label for="direct">Director</label>
+            <input type="text" name="direct" id="direct" placeholder="Director" maxlength="50" required>
+            <label for="anioes">Año estreno</label>
+            <input type="text" name="anioes" id="anioes" placeholder="2000" maxlength="4" style="width: 40px;" required>
+            <br>
+
+            <label for="paises">Pais/es</label>
+            <input type="text" name="paises" id="paises" placeholder="EUA" required>
+
+            <label for="genero">Genero</label>
+            <select name="genero" id="genero">
+                <option value="0">Action</option>
+                <option value="1">Adult</option>
+                <option value="2">Adventure</option>
+                <option value="3">Animation</option>
+                <option value="4">Biography</option>
+                <option value="5" selected>Comedy</option>
+                <option value="6">Crime</option>
+                <option value="7">Documentary</option>
+                <option value="8">Drama</option>
+                <option value="9">Family</option>
+                <option value="10">Film Noir</option>
+                <option value="11">Game-Show</option>
+                <option value="12">History</option>
+                <option value="13">Horror</option>
+                <option value="14">Musical</option>
+                <option value="15">Music</option>
+                <option value="16">Mystery</option>
+                <option value="17">News</option>
+                <option value="18">Reality-TV</option>
+                <option value="19">Romance</option>
+                <option value="20">Sci-Fi</option>
+                <option value="21">Short</option>
+                <option value="22">Talk-Show</option>
+                <option value="23">Thriller</option>
+                <option value="24">War</option>
+                <option value="25">Western</option>
+            </select>
+
+            <label for="califi">Calificación</label>
+            <select name="califi" id="califi">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br><br>
+
+            <label for="fictec">Ficha Tecnica</label>
+            <textarea rows="4" cols="94" name="fictec" id="fictec"></textarea>
+        </section>
+        <br><br><br>
+        <label for="borrar">Borrar</label>
+        <input type="reset" value="borrar">
+        
+        <div class="resultado">
+			<input type="text" name="muestraDatos" id="muestraDatos">Datos
+		</div>
+        <div class="resultado" id="misDatos"></div>
+        </section>
+        <!-- <label for="entrar">Enter</label>
+        <input type="submit" value="entrar"> -->
+    </form>
+    <!-- <a href="http://" target="_blank" rel="noopener noreferrer"></a> -->
+    <!-- <a href="javascript:enviar_formulario()">Enviar formulario</a> -->
     <br><br>
     <section class="resultado" id="muestraEj27"></section>
- 
+    <div id="zonaListado" style="height:377px;">
+        <iframe name="frame_rejilla" id="frame_rejilla" width="99%" height="100%" frameborder="0">
+            <ilayer name="frame_rejilla" id="frame_rejilla" width="100%" height="100%"></ilayer>
+        </iframe>
+    </div>
     <!-- todo; continua... -->
     <!-- ! ejercicio 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ #️⃣ 
     <h2 id="ejemplo0" onclick="ejx()">🟢 Ejercicio Nº Final 🟢</h2>

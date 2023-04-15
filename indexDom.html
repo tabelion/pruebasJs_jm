@@ -1,0 +1,406 @@
+<!-- 🔵 ======================================== 🔷
+#   🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+#   🔵  Empresa: Industrias de Software Vipescri  🔷
+#   🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#    🔵 ======================================== 🔷 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM JS</title>
+    <!-- entre 55 y 65 caracteres para el titulo -->
+    <meta name="description" content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
+    <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
+    <link type="text/css" rel="stylesheet" href="./css/stylo_first.css">
+    </head>
+
+    <body>
+    <h1>💥 Manejo del DOM en JavaScript 💥</h1>
+    <!-- 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ #️⃣ -->
+    <h2 id="inicio">🟢  Indice  🟢</h2>
+    <nav class="indice-principal" id="menu" style="float: left;">
+        <ul>
+            <li><a href="#dom61">🔷 61.DOM_Introducción 🔷</a></li>
+            <li><a href="#dom62">🔶 62.DOM_Nodos, Elementos y Selectores  🔶</a></li>
+            <li><a href="#dom63">🔷 63.DOM_Atributos y Data-Attributes  🔷</a></li>
+            <li><a href="#dom64">🔶 64.DOM_Estilos y Variables CSS  🔶</a></li>
+            <li><a href="#dom65">🔷 65.DOM_Clases CSS  🔷</a></li>
+            <li><a href="#dom66">🔶 66.DOM_Texto y HTML  🔶</a></li>
+            <li><a href="#dom67">🔷 67.DOM_Traversing_ Recorriendo el DOM  🔷</a></li>
+            <li><a href="#dom68">🔶 68.DOM_Creando Elementos y Fragmentos  🔶</a></li>
+            <li><a href="#dom69">🔷 69.DOM_Templates HTML  🔷</a></li>
+            <li><a href="#dom70">🔶 70.DOM_Modificando Elementos (Old Style) 🔶</a></li>
+            <li><a href="#dom71">🔷 71.DOM_Modificando Elementos (Cool Style) 🔷</a></li>
+            <li><a href="#dom72">🔶 72.DOM_Manejadores de Eventos 🔶</a></li>
+            <li><a href="#dom73">🔷 73.DOM_Eventos con Parámetros y Remover Eventos  🔷</a></li>
+            <li><a href="#dom74">🔶 74.DOM_Flujo de Eventos (Burbuja y Captura) 🔶</a></li>
+            <li><a href="#dom75">🔷 75.DOM_stopPropagation & preventDefault 🔷</a></li>
+            <li><a href="#dom76">🔶 76.DOM_Delegación de Eventos 🔶</a></li>
+            <li><a href="#dom77">🔷 77.BOM_Propiedades y Eventos 🔷</a></li>
+            <li><a href="#dom78">🔶 78.BOM_Métodos  🔶</a></li>
+            <li><a href="#dom79">🔷 79.BOM_Objetos_ URL, Historial y Navegador 🔷</a></li>
+        </ul>
+    </nav>
+    <div class="imagen-principal">
+        <img src="./img/bmp/Jesus.bmp" width="333"  alt="jesus">
+    </div>
+
+    <br>
+    <!-- ! ejercicio 6️⃣1️⃣ -->
+    <h2 id="dom61" onclick="ejercicio61()" style="clear: left;">🟢 JavaScript DOM Nº 6️⃣1️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <main class="menu2">
+        <ol>
+            <li>Eventos</li>
+            <li>Forms</li>
+            <li>AJAX -Fetch</li>
+            <li>History</li>
+            <li>Web Storage</li>
+            <li>Geolocalizacion</li>
+            <li>Drag & Drop</li>
+            <li>Index DB</li>
+            <li>Canvas</li>
+            <li>MatchMedia</li>
+            <li>etc...</li>
+        </ol>
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+    </main>
+    <a class="link-dom" href="indexDom.html">DOM</a>
+    <section class="card">
+        <figure class="card">
+            <img src="./img/fotos/IMG_20150609_091844.jpg" width="200" alt="Car">
+            <figcaption>Autos</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="./img/fotos/100_2096.JPG" width="200" alt="Barcos">
+            <figcaption>Boats</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="./img/fotos/2014-09-26 13.36.01.jpg" width="200" alt="Trenes">
+            <figcaption>Train</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="./img/fotos/100_1989.JPG" width="200" alt="Arch">
+            <figcaption>Arquitectura</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="./img/fotos/maimara.jpeg" width="200" alt="Nature">
+            <!-- <img src="https://placeimg.com/200/200/nature" alt="Nature"> -->
+            <figcaption>Nature</figcaption>
+        </figure>
+    </section>
+    <hr width="80%"><br>
+
+    <!-- ! ejercicio 6️⃣2️⃣ -->
+    <h2 id="dom62" onclick="ejercicio62()">🟢 JavaScript DOM Nº 6️⃣2️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 6️⃣3️⃣ -->
+    <h2 id="dom63" onclick="ejercicio63()">🟢 JavaScript DOM Nº 6️⃣3️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 6️⃣4️⃣ -->
+    <h2 id="dom64" onclick="ejercicio64()">🟢 JavaScript DOM Nº 6️⃣4️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 6️⃣5️⃣ -->
+    <h2 id="dom65" onclick="ejercicio65()">🟢 JavaScript DOM Nº 6️⃣5️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 6️⃣6️⃣ -->
+    <h2 id="dom66" onclick="ejercicio66()">🟢 JavaScript DOM Nº 6️⃣6️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 6️⃣7️⃣ -->
+    <h2 id="dom67" onclick="ejercicio67()">🟢 JavaScript DOM Nº 6️⃣7️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 6️⃣8️⃣ -->
+    <h2 id="dom68" onclick="ejercicio68()">🟢 JavaScript DOM Nº 6️⃣8️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 6️⃣9️⃣ -->
+    <h2 id="dom69" onclick="ejercicio69()">🟢 JavaScript DOM Nº 6️⃣9️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣0️⃣ -->
+    <h2 id="dom70" onclick="ejercicio70()">🟢 JavaScript DOM Nº 7️⃣0️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣1️⃣ -->
+    <h2 id="dom71" onclick="ejercicio71()">🟢 JavaScript DOM Nº 7️⃣1️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣2️⃣ -->
+    <h2 id="dom72" onclick="ejercicio72()">🟢 JavaScript DOM Nº 7️⃣2️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣3️⃣ -->
+    <h2 id="dom73" onclick="ejercicio73()">🟢 JavaScript DOM Nº 7️⃣3️⃣ 🟢</h2>
+    <br><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣4️⃣ -->
+    <h2 id="dom74" onclick="ejercicio74()">🟢 JavaScript DOM Nº 7️⃣4️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣5️⃣ -->
+    <h2 id="dom75" onclick="ejercicio75()">🟢 JavaScript DOM Nº 7️⃣5️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣6️⃣ -->
+    <h2 id="dom76" onclick="ejercicio76()">🟢 JavaScript DOM Nº 7️⃣6️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣7️⃣ -->
+    <h2 id="dom77" onclick="ejercicio77()">🟢 JavaScript DOM Nº 7️⃣7️⃣ 🟢</h2>
+    <br><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣8️⃣ -->
+    <h2 id="dom78" onclick="ejercicio78()">🟢 JavaScript DOM Nº 7️⃣8️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+    <!-- ! ejercicio 7️⃣9️⃣ -->
+    <h2 id="dom79" onclick="ejercicio79()">🟢 JavaScript DOM Nº 7️⃣9️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+
+    <hr>
+
+
+
+
+
+    <!-- ! ejercicio 2️⃣5️⃣ -->
+    <!--
+    <h2 id="dom01" onclick="ejercicio62()">🟢 JavaScript DOM Nº #️⃣1️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicio()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        ...
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato25">Cadena</label>
+        <input type="text" name="dato25" id="dato25">
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj25"></section> -->
+
+
+
+    <br>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- ✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶
+        ! a continuacion va/n la/s llamada/s a JavaScript 
+        <script src="./js/ej01.js" type="module"></script>
+    -->
+    <script src="./js/aprendoDom.js"></script>
+    </body>
+</html>

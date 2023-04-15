@@ -90,6 +90,17 @@ img {
     top: 200px;
 }
 
+.imagen-principal {
+    float: right; 
+    position: sticky; 
+    top: 80px; 
+    margin: 200px 5px;
+    z-index: 1;
+}
+
+.card {
+    float: left;
+}
 .numero {
     text-align: right;
     color: red;
@@ -178,6 +189,12 @@ img {
 
 label {
     margin-left: 20px;
+    background-color: #1D64A6;
+    color: aqua;
+    width: 141px;
+    height: 22px;
+    display: inline-block;
+    padding: 3px 5px;
 }
 
 /* todo: Ventana modal */
@@ -248,7 +265,8 @@ label {
     text-decoration: none;
     display: block;
     /* display: inline-block; */
-    width: 250px;
+    width: 575px;
+    height: 33px;
     font-size: 22px;
     text-align: center;
     border-radius: 15px;
@@ -268,12 +286,12 @@ section input[type="text"] {
 
 li:nth-child(even) {
     /* color: yellow; */
-    background-color: yellow;
+    background-color: rgb(239, 239, 202);
 }
 
 /* impares = odd */
 li:nth-child(odd) {
-    background-color:rgb(114, 230, 149);
+    background-color:rgb(170, 229, 242);
     color: blue;
 } 
 
@@ -304,4 +322,22 @@ li:hover {
     margin-left: 20px;
     display: inline-block;
     padding: 2px 11px 2px 11px;
+}
+
+.zonaDatos {
+    float: left;
+    width: 99%;
+    /*height:313px;*/
+    margin-top: 1px;
+    margin-left: 1px;
+    background-color: aquamarine;
+}
+
+.zonaListado {
+    float: left;
+    width: 99%;
+    /*height:313px;*/
+    margin-top: 300px;
+    margin-left: 1px;
+    background-color: antiquewhite;
 }
