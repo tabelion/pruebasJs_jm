@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios en JS</title>
+    <title>Ej en JS 44-60</title>
     <!-- entre 55 y 65 caracteres para el titulo -->
     <meta name="description" content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
     <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
@@ -17,38 +17,404 @@
     </head>
 
     <body>
-    <h1>💥 Ejercicio en JavaScript 💥</h1>
+    <h1>💥 Ejercicio en JavaScript 44 al 60 💥</h1>
     <!-- 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ #️⃣ -->
     <h2 id="inicio">🟢  Indice  🟢</h2>
     <main class="indice-principal">
         <ul>
-            <li><a href="#ejemplo01">🔷 44.Temporizadores (setTimeout & setInterval) 🔷</a></li>
-            <li><a href="#ejemplo02">🔶 45.Asincronía y el Event Loop  🔶</a></li>
-            <li><a href="#ejemplo03">🔷 46.Callbacks  🔷</a></li>
-            <li><a href="#ejemplo04">🔶 47.Promesas  🔶</a></li>
-            <li><a href="#ejemplo05">🔷 48.Async - Await  🔷</a></li>
-            <li><a href="#ejemplo06">🔶 49.Symbols  🔶</a></li>
-            <li><a href="#ejemplo07">🔷 50.Sets  🔷</a></li>
-            <li><a href="#ejemplo08">🔶 51.Maps  🔶</a></li>
-            <li><a href="#ejemplo09">🔷 52.WeakSets & WeakMaps  🔷</a></li>
-            <li><a href="#ejemplo10">🔶 53.Iterables & Iterators 🔶</a></li>
-            <li><a href="#ejemplo11">🔷 54.Generators 🔷</a></li>
-            <li><a href="#ejemplo12">🔶 55.Proxies 🔶</a></li>
-            <li><a href="#ejemplo13">🔷 56.Propiedades Dinámicas de los Objetos 🔷</a></li>
-            <li><a href="#ejemplo14">🔶 57.this 🔶</a></li>
-            <li><a href="#ejemplo15">🔷 58.call, apply, bind 🔷</a></li>
-            <li><a href="#ejemplo16">🔶 59.JSON 🔶</a></li>
-            <li><a href="#ejemplo17">🔷 60.WEB APIs 🔷</a></li>
+            <li><a href="#ej44">🔷 44.Temporizadores (setTimeout & setInterval) 🔷</a></li>
+            <li><a href="#ej45">🔶 45.Asincronía y el Event Loop  🔶</a></li>
+            <li><a href="#ej46">🔷 46.Callbacks  🔷</a></li>
+            <li><a href="#ej47">🔶 47.Promesas  🔶</a></li>
+            <li><a href="#ej48">🔷 48.Async - Await  🔷</a></li>
+            <li><a href="#ej49">🔶 49.Symbols  🔶</a></li>
+            <li><a href="#ej50">🔷 50.Sets  🔷</a></li>
+            <li><a href="#ej51">🔶 51.Maps  🔶</a></li>
+            <li><a href="#ej52">🔷 52.WeakSets & WeakMaps  🔷</a></li>
+            <li><a href="#ej53">🔶 53.Iterables & Iterators 🔶</a></li>
+            <li><a href="#ej54">🔷 54.Generators 🔷</a></li>
+            <li><a href="#ej55">🔶 55.Proxies 🔶</a></li>
+            <li><a href="#ej56">🔷 56.Propiedades Dinámicas de los Objetos 🔷</a></li>
+            <li><a href="#ej57">🔶 57.this 🔶</a></li>
+            <li><a href="#ej58">🔷 58.call, apply, bind 🔷</a></li>
+            <li><a href="#ej59">🔶 59.JSON 🔶</a></li>
+            <li><a href="#ej60">🔷 60.WEB APIs 🔷</a></li>
             
         </ul>
     </main>
     <br>
-    <!-- ! ejercicio #️⃣1️⃣ -->
-    <h2 id="ejemplo01" onclick="ejercicio01()">🟢 Ejercicio JavaScript Nº #️⃣1️⃣ 🟢</h2>
+    <!-- ! ejercicio 4️⃣4️⃣ -->
+    <h2 id="ej44" onclick="ejercicio44()">🟢 Ejercicio JavaScript Nº 4️⃣4️⃣ 🟢</h2>
     <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 Temporizadores (setTimeout & setInterval) 🔷
+    </p>
+    <hr width="80%"><br>
+    <br><hr width="80%">
+    <br>
+    <section style="margin-left: 20%;" class="resultado" id="muestraEj44">Inicio Reloj</section>
+    <br><br>
+    <hr width="80%"><br>
+    <div class="otro-boton">
+        <a onClick="ej44_stop()" title="stop-reloj"></a>
+    </div>
+    <br>
+    <!-- ! ejercicio 4️⃣5️⃣ -->
+    <h2 id="ej45" onclick="ejercicio45()">🟢 Ejercicio JavaScript Nº 4️⃣5️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 Asincronía y el Event Loop 🔶
+    </p>
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj45">pulse 45</section>
+    <hr width="80%"><br>
 
+    <br>
+    <!-- ! ejercicio 4️⃣6️⃣ -->
+    <h2 id="ej46" onclick="ejercicio46()">🟢 Ejercicio JavaScript Nº 4️⃣6️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 Callbacks 🔷
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato46">digie un valor </label>
+        <input type="text" class="numero" name="dato46" id="dato46" value="0">
+    </section>
+    <br>
+    <section class="resultado" id="muestraEj46"></section>
+    <hr width="80%"><br>
 
+    <br>
+    <!-- ! ejercicio 4️⃣7️⃣ -->
+    <h2 id="ej47" onclick="ejercicio47()">🟢 Ejercicio JavaScript Nº 4️⃣7️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 Promesas 🔶
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato47">digie un valor </label>
+        <input type="text" class="numero" name="dato47" id="dato47" value="0">
+    </section>
+    <br>
+    <section class="resultado" id="muestraEj47"></section>
+    <hr width="80%"><br>
 
+    <br>
+    <!-- ! ejercicio 4️⃣8️⃣ -->
+    <h2 id="ej48" onclick="ejercicio48()">🟢 Ejercicio JavaScript Nº 4️⃣8️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 48.Async - Await 🔷
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato48">digite Numero</label>
+        <input type="text" class="numero" name="dato48" id="dato48" value="0">
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj48"></section>
+    <hr width="80%"><br>
+    <section class="resultado" id="muestraEj48b"></section>
+    <hr width="80%"><br>
+
+    <br>
+    <!-- ! ejercicio 4️⃣9️⃣ -->
+    <h2 id="ej49" onclick="ejercicio49()">🟢 Ejercicio JavaScript Nº 4️⃣9️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 49.Symbols  🔶
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato49">digite Numero</label>
+        <input type="text" class="numero" name="dato49" id="dato49" value="0">
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj49"></section>
+    <hr width="80%"><br>
+
+    <br>
+    <!-- ! ejercicio 5️⃣0️⃣ -->
+    <h2 id="ej50" onclick="ejercicio50()">🟢 Ejercicio JavaScript Nº 5️⃣0️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 50.Sets (arma un array con datos unicos no hay duplicados) 🔷
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato50">digite Numero</label>
+        <input type="text" class="numero" name="dato50" id="dato50" value="0">
+
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj50"></section>
+    <hr width="80%"><br>
+
+    <br>
+    <!-- ! ejercicio 5️⃣1️⃣ -->
+    <h2 id="ej51" onclick="ejercicio51()">🟢 Ejercicio JavaScript Nº 5️⃣1️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 51.Maps  🔶
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato51">digite Numero</label>
+        <input type="text" class="numero" name="dato51" id="dato51" value="0">
+ 
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj51"></section>
+    <hr width="80%"><br>
+
+    <!-- ! ejercicio 5️⃣2️⃣ -->
+    <h2 id="ej52" onclick="ejercicio52()">🟢 Ejercicio JavaScript Nº 5️⃣2️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 52.WeakSets & WeakMaps  🔷
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato52">digite Numero</label>
+        <input type="text" class="numero" name="dato52" id="dato52" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj52"></section>
+    <hr width="80%"><br>
+
+    <!-- ! ejercicio 5️⃣3️⃣ -->
+    <h2 id="ej53" onclick="ejercicio53()">🟢 Ejercicio JavaScript Nº 5️⃣3️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 53.Iterables & Iterators 🔶
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato53">digite Numero</label>
+        <input type="text" class="numero" name="dato53" id="dato53" value="0">
+ 
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj53"></section>
+    <hr width="80%"><br>
+
+    <!-- ! ejercicio 5️⃣4️⃣ -->
+    <h2 id="ej54" onclick="ejercicio54()">🟢 Ejercicio JavaScript Nº 5️⃣4️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+    <pre>
+        🔷 54.Generators 🔷
+    </pre>
+    </p>
+    <hr width="80%"><br>
+    <section>
+        <label for="dato54">Rango de Numero</label>
+        <input type="text" class="numero" name="dato54" id="dato54" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj54"></section>
+    <hr width="80%"><br>
+
+    <!-- ! ejercicio 5️⃣5️⃣ -->
+    <h2 id="ej55" onclick="ejercicio55()">🟢 Ejercicio JavaScript Nº 5️⃣5️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 55.Proxies 🔶
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato55">digite Numero</label>
+        <input type="text" class="numero" name="dato55" id="dato55" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj55"></section>
+    <hr width="80%"><br>
+    
+    <!-- ! ejercicio 5️⃣6️⃣ -->
+    <h2 id="ej56" onclick="ejercicio56()">🟢 Ejercicio JavaScript Nº 5️⃣6️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 56.Propiedades Dinámicas de los Objetos 🔷
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato56">digite Numero</label>
+        <input type="text" class="numero" name="dato56" id="dato56" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj56"></section>
+    <hr width="80%"><br>
+    
+    <!-- ! ejercicio 5️⃣7️⃣ -->
+    <h2 id="ej57" onclick="ejercicio57()">🟢 Ejercicio JavaScript Nº 5️⃣7️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 57.this 🔶
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato57">digite Numero</label>
+        <input type="text" class="numero" name="dato57" id="dato57" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj57"></section>
+    <hr width="80%"><br>
+    
+    <!-- ! ejercicio 5️⃣8️⃣ -->
+    <h2 id="ej58" onclick="ejercicio58()">🟢 Ejercicio JavaScript Nº 5️⃣8️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 58.call, apply, bind 🔷
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato58">digite Numero</label>
+        <input type="text" class="numero" name="dato58" id="dato58" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj51"></section>
+    <hr width="80%"><br>
+    
+    <!-- ! ejercicio 5️⃣9️⃣ -->
+    <h2 id="ej59" onclick="ejercicio59()">🟢 Ejercicio JavaScript Nº 5️⃣9️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔶 59.JSON 🔶
+    </p>
+    <hr width="80%"><br>
+    <br>
+    <section>
+        <label for="dato59">digite Numero</label>
+        <input type="text" class="numero" name="dato59" id="dato59" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj59"></section>
+    <hr width="80%"><br>
+    
+    <!-- ! ejercicio 6️⃣0️⃣ -->
+    <h2 id="ej60" onclick="ejercicio60()">🟢 Ejercicio JavaScript Nº 6️⃣0️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="indice()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <p class="consigna">
+        🔷 60.WEB APIs 🔷   
+    </p>
+    <h3>DOM: Document Object Model</h3>
+    <h3>BOM: Browser  Object Model</h3>
+    <h3>CSSOM:  CSS  Object Model</h3>
+    <hr width="80%"><br>
+    <h4>Web APIs (ei pi ais) </h4>
+    <ul>
+        <li>Eventos</li>
+        <li>Forms</li>
+        <li>AJAX - Fetch</li>
+        <li>History</li>
+        <li>Web Storage</li>
+        <li>Geolocalizacion</li>
+        <li>Drag & Drop</li>
+        <li>Indexed DB</li>
+        <li>Canvas</li>
+        <li>MatchMedia</li>
+        <li>etc...</li>
+    </ul>
+    <br>
+
+    <section>
+        <label for="dato59">digite Numero</label>
+        <input type="text" class="numero" name="dato60" id="dato60" value="0">
+    
+    </section>
+    <br><br>
+    <section class="resultado" id="muestraEj60"></section>
+    <hr width="80%"><br>    
 
 
     <br>
@@ -60,6 +426,7 @@
         ! a continuacion va/n la/s llamada/s a JavaScript 
         <script src="./js/ej01.js" type="module"></script>
     -->
-    <script src="./js/ejercicioDom.js"></script>
+    <script src="./js/aprendoMasJs.js"></script>
+    <!-- <script src="./nuevos-tipos.js"></script> -->
     </body>
 </html>

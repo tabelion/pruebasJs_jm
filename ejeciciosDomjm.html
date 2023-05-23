@@ -1,0 +1,399 @@
+<!-- 🔵 ======================================== 🔷
+#   🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+#   🔵  Empresa: Industrias de Software Vipescri  🔷
+#   🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#    🔵 ======================================== 🔷 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios DOM JS</title>
+        <!-- entre 55 y 65 caracteres para el titulo -->
+        <meta name="description" content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
+        <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
+        <link type="text/css" rel="stylesheet" href="./css/stylo_first.css">
+        <link type="text/css" rel="stylesheet" href="./css/stylo_dom.css">
+
+    </head>
+
+    <body>
+    <h1>💥 Ejercicio del DOM en JavaScript 💥</h1>
+    <!-- 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ #️⃣ -->
+    <h2 id="inicio">🟢  Indice  🟢</h2>
+    <nav class="indice-principal" id="menu" style="float: left;">
+        <ul>
+            <li><a href="#dom080">🔶 080.DOM_Presentación 🔶</a></li>
+            <li><a href="#dom081">🔷 081.DOM_Menú de Hamburguesa 🔷</a></li>
+            <li><a href="#dom082">🔶 082.DOM_Reloj Digital   🔶</a></li>
+            <li><a href="#dom083">🔷 083.DOM_Alarma Sonora  🔷</a></li>
+            <li><a href="#dom084">🔶 084.DOM_Eventos del Teclado (Atajos)  🔶</a></li>
+            <li><a href="#dom085">🔷 085.DOM_Eventos Teclado (movimientos-colisiones) 🔷</a></li>
+            <li><a href="#dom086">🔶 086.DOM_Cuenta Regresiva (countdown) 🔶</a></li>
+            <li><a href="#dom087">🔷 087.DOM_Botón de Scroll 🔷</a></li>
+            <li><a href="#dom088">🔶 088.DOM_Tema Dark_Light 🔶</a></li>
+            <li><a href="#dom089">🔷 089.DOM_API localStorage 🔷</a></li>
+            <li><a href="#dom090">🔶 090.DOM_Responsive con JavaScript 🔶</a></li>
+            <li><a href="#dom091">🔷 091.DOM_Responsive Tester 🔷</a></li>
+            <li><a href="#dom092">🔶 092.DOM_Detección de Dispositivos User Agent 🔶</a></li>
+            <li><a href="#dom093">🔷 093.DOM_Detección del estado de la red 🔷</a></li>
+            <li><a href="#dom094">🔶 094.DOM_Detección de la WebCam 🔶</a></li>
+            <li><a href="#dom095">🔷 095.DOM_Filtros de Búsqueda 🔷</a></li>
+            <li><a href="#dom096">🔶 096.DOM_Delegación de Eventos 🔶</a></li>
+            <li><a href="#dom097">🔷 097.DOM_Sorteo Digital 🔷</a></li>
+            <li><a href="#dom098">🔶 098.DOM_Responsive Slider 🔶</a></li>
+            <li><a href="#dom099">🔷 099.DOM_ScrollSpy con Intersection Observer 🔷</a></li>
+            <li><a href="#dom100">🔶 100.Video Intel.(IntersecObserv& VisibiliChange) 🔶</a></li>
+            <li><a href="#dom101">🔷 101.DOM_Validación de Formularios con HTML5 🔷</a></li>
+            <li><a href="#dom102">🔶 102.DOM_Validación de Formularios 🔶</a></li>
+            <li><a href="#dom103">🔷 103.DOM_Envío de Formularios  🔷</a></li>
+            <li><a href="#dom104">🔶 104.DOM_Narrador (Lector de Voz) 🔶</a></li>
+        </ul>
+    </nav>
+    <div class="imagen-principal">
+        <img src="./img/bmp/Jesus.bmp" width="333"  alt="jesus">
+    </div>
+
+    <br>
+    <!-- ! ejercicio 8️⃣0️⃣ -->
+    <h2 id="dom080" onclick="ejercicio80()" style="clear: left;">🟢 JavaScript DOM Nº 8️⃣0️⃣ 🟢 
+    </h2>
+    <div class="indices"><a href="#" onClick="inicioDom()" title="Indice"></a></div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣1️⃣ -->
+    <h2 id="dom081" onclick="ejercicio81()">🟢 JavaScript DOM Nº 8️⃣1️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣2️⃣ -->
+    <h2 id="dom082" onclick="ejercicio82()">🟢 JavaScript DOM Nº 8️⃣2️⃣  🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣3️⃣ -->
+    <h2 id="dom083" onclick="ejercicio83()">🟢 JavaScript DOM Nº 8️⃣3️⃣  🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣4️⃣ -->
+    <h2 id="dom084" onclick="ejercicio84()">🟢 JavaScript DOM Nº 8️⃣4️⃣  🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣5️⃣ -->
+    <h2 id="dom085" onclick="ejercicio85()">🟢 JavaScript DOM Nº 8️⃣5️⃣  🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣6️⃣ -->
+    <h2 id="dom086" onclick="ejercicio86()">🟢 JavaScript DOM Nº 8️⃣6️⃣  🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣7️⃣ -->
+    <h2 id="dom087" onclick="ejercicio87()">🟢 JavaScript DOM Nº 8️⃣7️⃣  🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣8️⃣ -->
+    <h2 id="dom088" onclick="ejercicio88()">🟢 JavaScript DOM Nº 8️⃣8️⃣  🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 8️⃣9️⃣ -->
+    <h2 id="dom089" onclick="ejercicio89()">🟢 JavaScript DOM Nº 8️⃣9️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣0️⃣ -->
+    <h2 id="dom090" onclick="ejercicio90()">🟢 JavaScript DOM Nº 9️⃣0️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣1️⃣ -->
+    <h2 id="dom091" onclick="ejercicio91()">🟢 JavaScript DOM Nº 9️⃣1️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣2️⃣ -->
+    <h2 id="dom092" onclick="ejercicio92()">🟢 JavaScript DOM Nº 9️⃣2️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣3️⃣ -->
+    <h2 id="dom093" onclick="ejercicio93()">🟢 JavaScript DOM Nº 9️⃣3️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣4️⃣ -->
+    <h2 id="dom094" onclick="ejercicio94()">🟢 JavaScript DOM Nº 9️⃣4️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣5️⃣ -->
+    <h2 id="dom095" onclick="ejercicio95()">🟢 JavaScript DOM Nº 9️⃣5️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣6️⃣ -->
+    <h2 id="dom096" onclick="ejercicio96()">🟢 JavaScript DOM Nº 9️⃣6️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣7️⃣ -->
+    <h2 id="dom097" onclick="ejercicio97()">🟢 JavaScript DOM Nº 9️⃣7️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣8️⃣ -->
+    <h2 id="dom098" onclick="ejercicio98()">🟢 JavaScript DOM Nº 9️⃣8️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 9️⃣9️⃣ -->
+    <h2 id="dom099" onclick="ejercicio99()">🟢 JavaScript DOM Nº 9️⃣9️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 1️⃣0️⃣0️⃣ -->
+    <h2 id="dom100" onclick="ejercicio100()">🟢 JavaScript DOM Nº 1️⃣0️⃣0️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 1️⃣0️⃣1️⃣ -->
+    <h2 id="dom101" onclick="ejercicio101()">🟢 JavaScript DOM Nº 1️⃣0️⃣1️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 1️⃣0️⃣2️⃣ -->
+    <h2 id="dom102" onclick="ejercicio102()">🟢 JavaScript DOM Nº 1️⃣0️⃣2️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 1️⃣0️⃣3️⃣ -->
+    <h2 id="dom103" onclick="ejercicio103()">🟢 JavaScript DOM Nº 1️⃣0️⃣3️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <!-- ! ejercicio 1️⃣0️⃣4️⃣ -->
+    <h2 id="dom104" onclick="ejercicio104()">🟢 JavaScript DOM Nº 1️⃣0️⃣4️⃣ 🟢</h2>
+    <div class="indices">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br>
+    <hr width="80%">
+
+    <hr width="80%"><br>
+    <br><br>
+    <section class="resultado" id="muestraEj62"></section>
+    <hr>
+
+    <br><br><br>
+
+    
+    <hr width="80%"><br>
+
+    <br>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- ✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶
+        ! a continuacion va/n la/s llamada/s a JavaScript 
+        <script src="./js/ej01.js" type="module"></script>
+    -->
+    <script src="./js/aprendoDom.js"></script>
+</body>
+</html>

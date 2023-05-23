@@ -14,6 +14,14 @@
     <meta name="description" content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
     <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
     <link type="text/css" rel="stylesheet" href="./css/stylo_first.css">
+    <link type="text/css" rel="stylesheet" href="./css/stylo_dom.css">
+
+    <style>
+        /* :root {
+            --yellow-color: #F7DF1E;
+            --dark-color: #222;
+        } */
+    </style>
     </head>
 
     <body>
@@ -35,7 +43,7 @@
             <li><a href="#dom71">🔷 71.DOM_Modificando Elementos (Cool Style) 🔷</a></li>
             <li><a href="#dom72">🔶 72.DOM_Manejadores de Eventos 🔶</a></li>
             <li><a href="#dom73">🔷 73.DOM_Eventos con Parámetros y Remover Eventos  🔷</a></li>
-            <li><a href="#dom74">🔶 74.DOM_Flujo de Eventos (Burbuja y Captura) 🔶</a></li>
+            <li><a href="#dom74">🔶 74.DOM_Flujo de Eventos(Burbuja y Captura) 🔶</a></li>
             <li><a href="#dom75">🔷 75.DOM_stopPropagation & preventDefault 🔷</a></li>
             <li><a href="#dom76">🔶 76.DOM_Delegación de Eventos 🔶</a></li>
             <li><a href="#dom77">🔷 77.BOM_Propiedades y Eventos 🔷</a></li>
@@ -71,10 +79,23 @@
         <label for="nombre">nombre</label>
         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
     </main>
-    <a class="link-dom" href="indexDom.html">DOM</a>
-    <section class="card">
+    <br><br><br>
+    <div class="otro-boton">
+        <a class="link-dom2" href="indexDom.html" style="background-color:chartreuse; color: rgb(237, 100, 157)  ;" data-description="Document Objet Model"> DOM</a>
+    </div>
+    
+    <hr width="80%"><br>
+
+    <!-- ! ejercicio 6️⃣2️⃣ -->
+    <h2 id="dom62" onclick="ejercicio62()">🟢 JavaScript DOM Nº 6️⃣2️⃣ 🟢</h2>
+    <br><br>
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <br><hr width="80%">
+    <section class="cards">
         <figure class="card">
-            <img src="./img/fotos/IMG_20150609_091844.jpg" width="200" alt="Car">
+            <img src="./img/fotos/IMG_20150609_091844.jpg" width="200" alt="Carx">
             <figcaption>Autos</figcaption>
         </figure>
         <figure class="card">
@@ -94,23 +115,14 @@
             <!-- <img src="https://placeimg.com/200/200/nature" alt="Nature"> -->
             <figcaption>Nature</figcaption>
         </figure>
+        <figure class="card">
+            <img src="./img/fotos/2014-09-28 11.56.06.jpg" width="200"  alt="vip">
+            <figcaption>salon vip</figcaption>
+        </figure>
     </section>
     <hr width="80%"><br>
-
-    <!-- ! ejercicio 6️⃣2️⃣ -->
-    <h2 id="dom62" onclick="ejercicio62()">🟢 JavaScript DOM Nº 6️⃣2️⃣ 🟢</h2>
     <br><br>
-    <div class="indice">
-        <a href="#" onClick="inicioDom()" title="Indice"></a>
-    </div>
-    <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
-    <hr width="80%"><br>
-
+    <section class="resultado" id="muestraEj62"></section>
     <hr>
 
     <!-- ! ejercicio 6️⃣3️⃣ -->
@@ -120,11 +132,36 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <label for="nNombre">Nombre</label>
+    <input type="text" name="nNombre" id="nNombre" placeholder="Tere Petrelli">
+    <a href="indexDom.html" style="background-color: brown; color: bisque;" class="link-dom2" data-description="Document Object Model">DOM2</a>
+    <div class="figu">
+        <div class="card">
+            <img src="./img/fotos/100_1989.JPG" width="200" alt="Arch">
+            <figcaption>Arquitectura</figcaption>
+        </div>
+        <figure class="card">
+            <img src="./img/fotos/IMG_20150609_091844.jpg" width="200" alt="Car">
+            <figcaption>Autos</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="./img/fotos/100_2096.JPG" width="200" alt="Barcos">
+            <figcaption>Boats</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="./img/fotos/20150609_jesus-orlando.jpg" width="270" alt="Jesus">
+            <figcaption>Orlando</figcaption>
+        </figure>
+        <figure class="card rotate-45" >
+            <img src="../../img/fotos/aNovio3.JPG" width="270" alt="Arch">
+            <figcaption>Noviazgo</figcaption>
+        </figure>
+        
+        
+    </div>
+        
+        
+    
     <hr width="80%"><br>
 
     <hr>
@@ -136,11 +173,8 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <a href="indexDom.html" style="background-color: brown; color: bisque;" class="link-dom" data-description="Document Object Model">DOM</a>
+    
     <hr width="80%"><br>
 
     <hr>
@@ -153,9 +187,10 @@
     </div>
     <br><hr width="80%">
     <p class="consigna">
-    <pre>
-        ...
-    </pre>
+        <figure class="card">
+            <img src="../../img/fotos/aNovio3.JPG" width="200" height="200" alt="compromiso">
+            <figcaption>Noviazgo</figcaption>
+        </figure>
     </p>
     <hr width="80%"><br>
 
@@ -168,13 +203,17 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <p class="consigna">  </p>
+    <div id="innert">   </div>
     <hr width="80%"><br>
-
+    <div id="que-es">   </div>
+    <hr width="80%"><br>
+    <div id="con-te">   </div>
+    <hr width="80%"><br>
+    <!--  -->
+    <br>
+    <section class="resultado" id="muestraEj66"></section>
+    <hr width="80%"><br>
     <hr>
 
     <!-- ! ejercicio 6️⃣7️⃣ -->
@@ -200,14 +239,25 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <section class="figuras">
+    
+    </section>
+    <hr width="80%"><br>
+    <br>
+    <section id="muestraTitu"></section>
     <hr width="80%"><br>
 
+    <section class="resultado" id="muestraEj68"></section>
+    
+    <section class="resultado">
+        <ol type="1" id="genera-ol">
+        </ol>
+    </section>
+
+    <section class="resultado" id="muestraLista"></section>
+    <hr width="80%"><br>
     <hr>
+    
 
     <!-- ! ejercicio 6️⃣9️⃣ -->
     <h2 id="dom69" onclick="ejercicio69()">🟢 JavaScript DOM Nº 6️⃣9️⃣ 🟢</h2>
@@ -216,11 +266,23 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+
+    <section class="tarjeta"> 
+        <figure class="card">
+            <img src="./img/fotos/20150609_jesus-orlando.jpg" width="270" alt="Jesus">
+            <figcaption>Orlando</figcaption>
+        </figure>
+    </section>
+
+    <template id="template-card">
+        <figure class="card">
+            <img>
+            <figcaption></figcaption>
+        </figure>
+    </template>
+
+
+
     <hr width="80%"><br>
 
     <hr>
@@ -264,19 +326,51 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <label for="nombre2">Nombre</label>
+    <input type="text" name="nombre2" id="nombre2" placeholder="Tere Petrelli">
+    <a href="indexDom.html" style="background-color: brown; color: bisque;" class="link-dom2" data-description="Document Object Model">DOM2</a>
+    <section class="tarjetas">
+        <div class="card">
+            <img src="./img/fotos/100_1989.JPG" width="200" alt="Arch">
+            <figcaption>Architecture</figcaption>
+        </div>
+        <figure class="card">
+            <img src="./img/fotos/IMG_20150609_091844.jpg" width="200" alt="Car">
+            <figcaption>Autos</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="./img/fotos/100_2096.JPG" width="200" alt="Barcos">
+            <figcaption>Boats</figcaption>
+        </figure>
+    </section>
+    <template id="template-tarjeta">
+        <figure class="card">
+            <img src="./img/fotos/20150609_jesus-orlando.jpg" width="270" alt="Jesus">
+            <figcaption>Orlando</figcaption>
+        </figure>
+        <figure class="card rotate-45" >
+            <img src="../../img/fotos/aNovio3.JPG" width="270" alt="Arch">
+            <figcaption>engagement</figcaption>
+        </figure>
+    </template>
+    
     <hr width="80%"><br>
-
+    <h3>Eventos de JavaScript</h3>
+    <h4>Manejadores de Eventos</h4>
+    <button onclick="evento72()">Evento con atributos HTML (no aconsejada)</button>
+    <hr><br>
+    <button id="eventoSem">Evento con manejador semantico</button>
+    <hr>
+    <button id="evenMultiple">Evento con manejador Multiple</button>
     <hr>
 
     <!-- ! ejercicio 7️⃣3️⃣ -->
     <h2 id="dom73" onclick="ejercicio73()">🟢 JavaScript DOM Nº 7️⃣3️⃣ 🟢</h2>
     <br><br>
-
+    <button id="eventoMultiple">Evento con manejador Multiple</button>
+    <hr>
+    <button id="eventoMRemover">Remover eventos con manejadores multiples 
+    </button>
     <hr>
 
     <!-- ! ejercicio 7️⃣4️⃣ -->
@@ -286,11 +380,21 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <h4>Flujo de eventos</h4>
+    <section class="eventos-flujo">
+        <div class="uno">
+            🔴 1 🔴 
+            <br>.
+            <div class="dos">
+                🟠 2 🟠
+                <br>.
+                <div class="tres">
+                    🔵 3 🔵
+
+                </div>
+            </div>
+        </div>
+    </section>
     <hr width="80%"><br>
 
     <hr>
@@ -302,11 +406,24 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <h4>Flujo de eventos</h4>
+    <section class="eventos-flujos">
+        <div class="uno">
+            🔴 1 🔴
+            <br>
+            ✨
+            <div class="dos">
+                🟠 2 🟠 
+                <br>
+                ✨
+                <div class="tres">
+                    🔵 3 🔵 
+                    <br>
+                    <a href="http://jonmircha.com/" target="_blank" rel="noopener">jonmircha</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <hr width="80%"><br>
 
     <hr>
@@ -318,36 +435,54 @@
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
     <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
+    <h4>Flujo de eventos</h4>
+    <section class="evento-flujo">
+        <div class="uno">
+            🟫 1 🟫 
+            <br>
+            🔶
+            <div class="dos">
+                🟩 2 🟩 
+                <br>
+                🔶
+                <div class="tres">
+                    🟪 3 🟪 
+                    <br>
+                    <a href="http://jonmircha.com/" target="_blank" rel="noopener">jonmircha</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <hr width="80%"><br>
-
+    <!-- 🟥 🟧 🟨  🟦  ⬛ ⬜ -->
     <hr>
 
     <!-- ! ejercicio 7️⃣7️⃣ -->
     <h2 id="dom77" onclick="ejercicio77()">🟢 JavaScript DOM Nº 7️⃣7️⃣ 🟢</h2>
-    <br><br>
+    
+    <div class="indice">
+        <a href="#" onClick="inicioDom()" title="Indice"></a>
+    </div>
+    <h3>Manejo del BOM -  Browser Object Models</h3>
+    
+    <br><hr width="80%">
 
     <hr>
 
     <!-- ! ejercicio 7️⃣8️⃣ -->
     <h2 id="dom78" onclick="ejercicio78()">🟢 JavaScript DOM Nº 7️⃣8️⃣ 🟢</h2>
-    <br><br>
+
+    <!-- <h3>Manejo del BOM -  Browser Object Models</h3> -->
     <div class="indice">
         <a href="#" onClick="inicioDom()" title="Indice"></a>
     </div>
-    <br><hr width="80%">
-    <p class="consigna">
-    <pre>
-        ...
-    </pre>
-    </p>
     <hr width="80%"><br>
-
-    <hr>
+    <section class="resultado" id="muestraNombre"></section>
+    <br><hr width="80%">
+    <button id="abrir-ventana">Abrir Ventana</button>
+    <button id="cerrar-ventana">Cerrar Ventana</button>
+    <button id="imprimir-ventana">Imprimir Ventana</button>
+    <hr width="80%">
 
     <!-- ! ejercicio 7️⃣9️⃣ -->
     <h2 id="dom79" onclick="ejercicio79()">🟢 JavaScript DOM Nº 7️⃣9️⃣ 🟢</h2>

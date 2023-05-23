@@ -1,0 +1,140 @@
+<!-- 🔵 ======================================== 🔷
+#   🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+#   🔵  Empresa: Industrias de Software Vipescri  🔷
+#   🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#    🔵 ======================================== 🔷 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios DOM JS</title>
+        <!-- entre 55 y 65 caracteres para el titulo -->
+        <meta name="description" content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
+        <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
+        <link type="text/css" rel="stylesheet" href="css/domEjercicioJm.css">
+        <!-- https://cdnjs.com/libraries/hamburgers -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"> -->
+        <!-- <link type="text/css" rel="stylesheet" href="css/hamburgers.min.css"> -->
+
+</head>
+<body>
+    <header class="header">
+        <h1>✨ Ejercicios del DOM jm ✨</h1>
+    </header>
+    <!-- https://jonsuh.com/hamburgers/ hamburger hamburger--vortex -->
+    <!-- <button class="panel-btn hamburger hamburger--collapse" type="button"> -->
+    <!-- <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span> -->
+    
+    <button class="panel-btn" type="button">
+        <span id="menuAbre">
+            <img src="img/png/edita.png" alt="menu">
+        </span>
+        <span id="menuCierra" style="display: none;">
+            <img src="img/png/limpia2.png" alt="menu">
+        </span>
+    </button>
+    <aside class="panel">
+        <nav class="menu">
+            <!-- a[href="#seccion$"]*5{Sección $}  
+                ! Abreviación Emmet 
+            -->
+            <a href="#seccion1">⭕ Reloj Digital y Alarma Sonora ⭕</a>
+            <a href="#seccion2">⭕ Eventos de Teclado ⭕</a>
+            <a href="#seccion3">⭕ Cuenta Regresiva ⭕</a>
+            <a href="#seccion4">⭕ Sección 4 ⭕</a>
+            <a href="#seccion5">⭕ Sección 5 ⭕</a>
+            <a href="#seccion6">⭕ Sección 6 ⭕</a>
+            <a href="#seccion7">⭕ Sección 7 ⭕</a>
+        </nav>
+    </aside>
+    <main> 
+        <!-- section#seccion$.section*5>h2{sección $} -->
+        <!-- todo ============================================= -->
+        <section id="seccion1" class="section">
+            <h2>⏩ Reloj Digital y Alarma Sonora ⏪</h2>
+            <div id="reloj"></div>
+            <div>
+                <button id="activar-reloj">Inicia Reloj</button>
+                <button id="desactivar-reloj" disabled="true">Detener Reloj</button>
+                <button id="activa-alarma">Inicia Alarma</button>
+                <button id="desactiva-alarma" disabled="true">Detener Alarma</button>
+            </div>
+            <br><br>
+            <audio src="./assets/alarma-good-morning-5-5.mp3" controls> </audio>
+        </section>
+
+        <!-- todo ============================================= -->
+        <section id="seccion2" class="section">
+            <h2>⏩ Eventos de Teclado ⏪</h2>
+            <article class="stage">
+                <div class="ball" id="pelota">🏀</div>
+            </article>
+            <br><br>
+            <hr>
+            <div class="resultado" id="teclaPulsada">🏀</div>
+            <hr>
+        </section>
+        <!-- todo ============================================= -->
+        <section id="seccion3" class="section">
+            <h2>⏩ Cuenta Regresiva ⏪</h2>
+            <div id="countDown"></div>
+        </section>
+        
+        
+        <!-- todo ============================================= -->
+        <section id="seccion4" class="section">
+            <h2>⏩ sección 4 ⏪</h2>
+        </section>
+        
+        
+        <!-- todo ============================================= -->
+        <section id="seccion5" class="section">
+            <h2>⏩ sección 5 ⏪</h2>
+        </section>
+
+        
+        <!-- todo ============================================= -->
+        <section id="seccion6" class="section">
+            <h2>⏩ sección 6 ⏪</h2>
+        </section>
+
+        
+        <!-- todo ============================================= -->
+        <section id="seccion7" class="section">
+            <h2>⏩ sección 7 ⏪</h2>
+        </section>
+    </main>
+
+    <br>
+    <hr>
+    <button class="scroll-top-btn hidden">⤴️</button>
+    <button class="fondo-claro-btn hidden2">🌞</button>
+    <button class="fondo-oscuro-btn hidden3">🌜</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- ✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶✨ 🔶
+        ! a continuacion va/n la/s llamada/s a JavaScript 
+        <script src="./js/ej01.js" type="module"></script>
+    -->
+    <script src="js/domEjercicioJm.js" type="module"></script>
+    
+    <!-- <script>
+        const d = document;
+
+        function botonMenu() {
+            if (d.getElementById("menuAbre").style.display === 'none') {
+                d.getElementById("menuAbre").style.display = 'block';
+                d.getElementById("menuCierra").style.display = 'none';
+            } else {
+                d.getElementById("menuAbre").style.display = 'none';
+                d.getElementById("menuCierra").style.display = 'block';
+            }    
+        }
+    </script>   🌞 🌜  -->
+</body>
+</html>
