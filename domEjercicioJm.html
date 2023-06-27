@@ -5,21 +5,24 @@
 #    🔵 ======================================== 🔷 
 -->
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejercicios DOM JS</title>
-        <!-- entre 55 y 65 caracteres para el titulo -->
-        <meta name="description" content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
-        <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
-        <link type="text/css" rel="stylesheet" href="css/domEjercicioJm.css">
-        <!-- https://cdnjs.com/libraries/hamburgers -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"> -->
-        <!-- <link type="text/css" rel="stylesheet" href="css/hamburgers.min.css"> -->
+<html lang="en" data-dark>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM JS</title>
+    <!-- entre 55 y 65 caracteres para el titulo -->
+    <meta name="description"
+        content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
+    <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
+    <link type="text/css" rel="stylesheet" href="css/domEjercicioJm.css">
+    <!-- https://cdnjs.com/libraries/hamburgers -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/hamburgers.min.css"> -->
 
 </head>
-<body>
+
+<body data-dark>
     <header class="header">
         <h1>✨ Ejercicios del DOM jm ✨</h1>
     </header>
@@ -28,7 +31,7 @@
     <!-- <span class="hamburger-box">
         <span class="hamburger-inner"></span>
     </span> -->
-    
+
     <button class="panel-btn" type="button">
         <span id="menuAbre">
             <img src="img/png/edita.png" alt="menu">
@@ -42,19 +45,27 @@
             <!-- a[href="#seccion$"]*5{Sección $}  
                 ! Abreviación Emmet 
             -->
-            <a href="#seccion1">⭕ Reloj Digital y Alarma Sonora ⭕</a>
-            <a href="#seccion2">⭕ Eventos de Teclado ⭕</a>
-            <a href="#seccion3">⭕ Cuenta Regresiva ⭕</a>
-            <a href="#seccion4">⭕ Sección 4 ⭕</a>
-            <a href="#seccion5">⭕ Sección 5 ⭕</a>
-            <a href="#seccion6">⭕ Sección 6 ⭕</a>
-            <a href="#seccion7">⭕ Sección 7 ⭕</a>
+            <a href="#seccion01" data-scroll-spy>⭕ Reloj Digital y Alarma.</a>
+            <a href="#seccion02" data-scroll-spy>⭕ Eventos de Teclado.</a>
+            <a href="#seccion03" data-scroll-spy>⭕ Cuenta Regresiva.</a>
+            <a href="#seccion04" data-scroll-spy>⭕ Responsive con js.</a>
+            <a href="#seccion05" data-scroll-spy>⭕ Responsive Tester.</a>
+            <a href="#seccion06" data-scroll-spy>⭕ Deteccion de Dispositivo.</a>
+            <a href="#seccion07" data-scroll-spy>⭕ Deteccion conexion red.</a>
+            <a href="#seccion08" data-scroll-spy>⭕ Deteccion Camara Web.</a>
+            <a href="#seccion09" data-scroll-spy>⭕ Geolocalizacion.</a>
+            <a href="#seccion10" data-scroll-spy>⭕ Filtro de Busqueda.</a>
+            <a href="#seccion11" data-scroll-spy>⭕ Sorteo Digital.</a>
+            <a href="#seccion12" data-scroll-spy>⭕ Responsive Slider.</a>
+            <a href="#seccion13" data-scroll-spy>⭕ Video Inteligente.</a>
+            <a href="#seccion14" data-scroll-spy>⭕ Validacion de Formulario.</a>
+            <a href="#seccion15" data-scroll-spy>⭕ Sección 15.</a>
         </nav>
     </aside>
-    <main> 
+    <main>
         <!-- section#seccion$.section*5>h2{sección $} -->
-        <!-- todo ============================================= -->
-        <section id="seccion1" class="section">
+        <!-- todo 01 ============================================= -->
+        <section id="seccion01" class="section" data-scroll-spy>
             <h2>⏩ Reloj Digital y Alarma Sonora ⏪</h2>
             <div id="reloj"></div>
             <div>
@@ -64,11 +75,13 @@
                 <button id="desactiva-alarma" disabled="true">Detener Alarma</button>
             </div>
             <br><br>
-            <audio src="./assets/alarma-good-morning-5-5.mp3" controls> </audio>
+            <div class="control-audio">
+                <audio src="./assets/alarma-good-morning-5-5.mp3" controls> </audio>
+            </div>
         </section>
 
-        <!-- todo ============================================= -->
-        <section id="seccion2" class="section">
+        <!-- todo 02 ============================================= -->
+        <section id="seccion02" class="section" data-scroll-spy>
             <h2>⏩ Eventos de Teclado ⏪</h2>
             <article class="stage">
                 <div class="ball" id="pelota">🏀</div>
@@ -78,42 +91,268 @@
             <div class="resultado" id="teclaPulsada">🏀</div>
             <hr>
         </section>
-        <!-- todo ============================================= -->
-        <section id="seccion3" class="section">
+        <!-- todo 03 ============================================= -->
+        <section id="seccion03" class="section" data-scroll-spy>
             <h2>⏩ Cuenta Regresiva ⏪</h2>
             <div id="countDown"></div>
-        </section>
-        
-        
-        <!-- todo ============================================= -->
-        <section id="seccion4" class="section">
-            <h2>⏩ sección 4 ⏪</h2>
-        </section>
-        
-        
-        <!-- todo ============================================= -->
-        <section id="seccion5" class="section">
-            <h2>⏩ sección 5 ⏪</h2>
+            <video src="./assets/YourFuture.mkv" muted controls data-smart-video></video>
         </section>
 
-        
-        <!-- todo ============================================= -->
-        <section id="seccion6" class="section">
-            <h2>⏩ sección 6 ⏪</h2>
+
+        <!-- todo 04 ============================================= -->
+        <section id="seccion04" class="section" data-scroll-spy>
+            <h2>⏩ Responsive con JavaScript ⏪</h2>
+            <div id="youtube">🔲</div>
+            <div id="myFuture">🔶
+                <!-- <video src="./avi_mp4/YourFuture.mkv" width="400" height="400" controls> </video> -->
+            </div>
+            <div id="gmaps">💧</div>
         </section>
 
-        
+
+        <!-- todo 05 ============================================= -->
+        <section id="seccion05" class="section" data-scroll-spy>
+            <h2>⏩ Responsive Tester ⏪</h2>
+            <form id="responsive-tester">
+                <!-- <label for="direccion" class="etiqueta">Direccion</label> -->
+                <input type="url" class="input-url" name="direccion" placeholder="URL" required>
+                <br><br>
+                <!-- <label for="ancho" class="etiqueta">Ancho</label> -->
+                <input type="text" class="input-nro" name="ancho" maxlength="3" placeholder="Ancho" value="200" required>
+
+                <label for="alto">Alto</label>
+                <input type="text" class="input-nro" name="alto" id="alto" maxlength="3" placeholder="Alto" value="200" required>
+
+                <!-- <label for="probar">Probar</label> -->
+                <input type="submit" class="boton" name="probar" value="probar">
+
+                <!-- <label for="cerrar">Cerrar</label> -->
+                <input type="button" class="boton" name="cerrar" value="cerrar">
+            </form>
+        </section>
+
+        <!-- todo 06 ============================================= -->
+        <section id="seccion06" class="section" data-scroll-spy>
+            <h2>⏩ Deteccion de Dispositivo ⏪ <br> (User Agent)</h2>
+            <div id="user-device"></div>
+
+        </section>
+
+
+        <!-- todo 07 ============================================= -->
+        <section id="seccion07" class="section" data-scroll-spy>
+            <h2>⏩ Deteccion conexion red ⏪</h2>
+
+        </section>
+            <article class="boton-sale">
+                <img src="./img/png/botonSale.png" class="boton-like" alt="">
+            </article>
+
+
+        <!-- todo 08 ============================================= -->
+        <section id="seccion08" class="section" data-scroll-spy>
+            <h2>⏩ Deteccion Camara Web ⏪</h2>
+            <div id="user-video"></div>
+            <video id="webcam"></video>
+            <div id="foto">
+                <img src="./img/png/regresa.png" width="131" class="cat" alt="">con sombras
+                <img src="./img/png/regresa.png" width="131" class="sinSombras">.  sin sombras
+            </div>
+        </section>
+
+
         <!-- todo ============================================= -->
-        <section id="seccion7" class="section">
-            <h2>⏩ sección 7 ⏪</h2>
+        <section id="seccion09" class="section" data-scroll-spy>
+            <h2>⏩ Geolocalizacion ⏪</h2>
+
+            <div id="geolocation"></div>
+
+        </section>
+
+
+        <!-- todo ============================================= -->
+        <section id="seccion10" class="section" data-scroll-spy>
+            <h2>⏩ Filtro de Busqueda ⏪</h2>
+
+            <input type="search" placeholder="Buscar..." class="card-filter">  
+            <article class="cards">
+                <figure class="card">
+                    <img src="./img/fotos/OrlandoEEUU4.jpg" alt="auto">
+                    <figcaption>Auto Miami</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="./img/fotos/Capri_Italia.JPG" alt="viajes">
+                    <figcaption>Capri</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="./img/fotos/HotelDomusCaesari.jpg" alt="viajes">
+                    <figcaption>Roma Castel Gandolfo</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="./img/fotos/maimara.jpeg" alt="viajes">
+                    <figcaption>Maimara</figcaption>
+                </figure>
+                <figure class="card">
+                    <!--  style="margin-top: -25px;" -->
+                    <img src="./img/fotos/deNovios04.JPG" alt="novios">
+                    <figcaption>Cordoba</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="./img/fotos/VeneciaItalia.jpg" alt="novios">
+                    <figcaption>Venecia</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="./img/fotos/TrenBalaEuropa.jpg" alt="viaje">
+                    <figcaption>Tren Barcelona</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="./img/fotos/OzornoChile.JPG" alt="viaje">
+                    <figcaption>Chile</figcaption>
+                </figure>
+            </article>          
+        </section>
+
+        <!-- todo ============================================= -->
+        <section id="seccion11" class="section" data-scroll-spy>
+            <h2>⏩ Sorteo Digital ⏪</h2>
+            <!-- ul.players>li.player*10 -->
+            <ul class="players">
+                <li class="player">Html & css</li>
+                <li class="player">PHP</li>
+                <li class="player">JavaScript</li>
+                <li class="player">Ajax</li>
+                <li class="player">MySql</li>
+                <li class="player">Linux</li>
+                <li class="player">GibHub</li>
+                <li class="player">NodeJs</li>
+                <li class="player">React & Redux</li>
+                <li class="player">WordPress</li>
+            </ul>
+            <button id="winner-btn">Obtener Ganador</button>
+        </section>
+
+        <!-- todo ============================================= -->
+        <section id="seccion12" class="section" data-scroll-spy>
+            <h2>⏩ Responsive Slider ⏪</h2>
+
+            <div class="slider">
+                <div class="slider-slides">
+
+                    <div class="slider-slide active">
+                        
+                        <img src="./img/fotos/Capri_Italia.JPG" alt="capri">
+                    </div>
+                    <div class="slider-slide">
+                        <h4>dispositiva 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium error vitae quisquam totam voluptates deserunt corrupti mollitia quo quibusdam itaque delectus architecto, explicabo consequuntur culpa saepe perspiciatis? Laudantium, voluptatum non?
+                        </p>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/colladoVillalba.JPG" alt="novio2">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/HotelDomusCaesari.jpg" alt="hotel roma">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/OrlandoEEUU4.jpg" alt="civil">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/47b4f48f4e84be27f823973fa6ea7a6c.jpg" alt="">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/deNovios04.JPG" alt="novio3">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/OrlandoEEUU.jpg" alt="orlando">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/españa3.JPG" alt="orlando">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/españa1.JPG" alt="orlando">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/pileta.JPG" alt="orlando">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/españa2.JPG" alt="orlando">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/OrlandoEEUU5.jpg" alt="orlando">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="./img/fotos/TrenBalaEuropa.jpg" alt="orlando">
+                    </div>
+                </div>
+                <div class="slider-btn">
+                    <img src="./img/png/abanza2.png" class="prev" alt="prev">
+                    <img src="./img/png/retroc2.png" class="next" alt="next">
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- todo ============================================= -->
+        <section id="seccion13" class="section" data-scroll-spy>
+            <h2>⏩ Video Inteligente ⏪</h2>
+            <!-- <video src="./assets/YourFuture.mkv" muted loop width="" height="" controls> -->
+            <video src="./assets/YourFuture.mkv" muted loop controls data-smart-video width="500"></video>
+        </section>
+
+
+
+        <!-- todo ============================================= -->
+        <section id="seccion14" class="section" data-scroll-spy>
+            <h2>⏩ Validacion de Formulario ⏪</h2>
+
+            <!-- <form class="contact-form" action="grabar.php" method="post" action="grabar.html" > -->
+            <form name="form_busqueda" id="form_busqueda" class="contact-form" method="post">    
+                <legend class="contact-form-legend">Envianos tus comentarios</legend>
+                
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Escribe tu nombre" pattern="^[A-Za-z0-9ÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre (solo letras y numeros)" required>
+                
+                <label for="email" >Correo</label>
+                <input type="email" name="email" id="email" placeholder="Correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})" title="correo incorrecto" required>
+                <!-- 
+                <br>
+                <input type="email" name="email" id="email" placeholder="Correo" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$" title="correo incorrecto" style="margin-left: 8.5rem;" required> -->
+                
+                <label for="subject">Asunto a tratar</label>
+                <input type="text" name="subject" id="subject" placeholder="Asunto a tratar" title="dato incorrecto" required>
+
+                <label for="comments">Comentario</label>
+                <textarea name="comments" rows="5" cols="77" placeholder="Escriba comentario" data-pattern="^.{1,255}$" title="El comentario no debe exeder a los 255 caracteres" maxlength="256" required></textarea>
+                
+                <input type="submit" value="enviar">
+                <div class="contact-form-loader none">
+                    <img src="./img/gif/cargando.gif" alt="cargando">
+                </div>
+        
+                <div class="contact-form-response none">
+                    <p>Los datos fueron enviados</p>
+                </div>
+<!-- style="float: left; margin-left: 30%; margin-top: 33px; " -->
+
+            </form>
+
+        </section>
+
+
+
+        <!-- todo ============================================= -->
+        <section id="seccion15" class="section" data-scroll-spy>
+            <h2>⏩ sección 15⏪</h2>
         </section>
     </main>
 
     <br>
     <hr>
     <button class="scroll-top-btn hidden">⤴️</button>
-    <button class="fondo-claro-btn hidden2">🌞</button>
-    <button class="fondo-oscuro-btn hidden3">🌜</button>
+    <button class="dark-theme-btn" id="fondo-light">🌛</button>
+    <!-- <button class="fondo-dark-btn hidden2" id="fondo-dark" style="display: none;">🌞</button>  -->
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -122,7 +361,7 @@
         <script src="./js/ej01.js" type="module"></script>
     -->
     <script src="js/domEjercicioJm.js" type="module"></script>
-    
+
     <!-- <script>
         const d = document;
 
@@ -137,4 +376,5 @@
         }
     </script>   🌞 🌜  -->
 </body>
+
 </html>

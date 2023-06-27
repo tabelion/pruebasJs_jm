@@ -16,8 +16,8 @@ export function moveBall(e, ball, stage) {
         limitsBall = $ball.getBoundingClientRect(),
         limitsStage = $stage.getBoundingClientRect();
     let pelota = '20px';
-    console.warn('ball:',limitsBall);
-    console.log('stage:',limitsStage);
+    // console.warn('ball:',limitsBall);
+    // console.log('stage:',limitsStage);
 
     switch (e.keyCode) {
         case 37:
@@ -70,8 +70,8 @@ export function shortcuts(e) {
     console.log(`shift: ${e.shiftKey}`);
     console.warn(`------`);
     console.log(e); */
-    console.warn('valor keyCode:',e.keyCode);
-    console.log('tecla key:',e.key);
+    // console.warn('valor keyCode:',e.keyCode);
+    // console.log('tecla key:',e.key);
 
     let pulsaste;
     let colorFondo;

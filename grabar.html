@@ -1,0 +1,75 @@
+<!-- 🔵 ======================================== 🔷
+#   🔵  web: industriasvipe.com  🌐 vipescri.com  🔷
+#   🔵  Empresa: Industrias de Software Vipescri  🔷
+#   🔵  AUTORES: VILLALBA Raul Orlando y familia  🔷
+#    🔵 ======================================== 🔷 
+-->
+<!DOCTYPE html>
+<html lang="en" data-dark>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM JS</title>
+    <!-- entre 55 y 65 caracteres para el titulo -->
+    <meta name="description"
+        content="En esta pagina estamos aprendiendoe los fundamentes del html en el comentario no mas de 165 caracteres">
+    <link type="image/x-icon" rel="shortcut icon" href="./img/logo_vip.png">
+    <link type="text/css" rel="stylesheet" href="css/domEjercicioJm.css">
+    <!-- https://cdnjs.com/libraries/hamburgers -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/hamburgers.min.css"> -->
+
+
+	<script language="javascript">
+		var cursor;
+		if (document.all) {
+			// Está utilizando EXPLORER
+			cursor = 'hand';
+		} else {
+			// Está utilizando MOZILLA/NETSCAPE
+			cursor = 'pointer';
+		}
+		const d = document; //.getElementById()
+		let f = document.form_busqueda;
+		let nombre = f.name.value;
+
+
+
+
+		alert('dd: ' + nombre);
+		function cerrar() {
+			// var resul = "<?php echo $resul; ?>";
+			// var id = <?php echo $idClave ?>;
+			// var cadena = "<?php echo $cadena ?>";
+			// // permite enviar el id encriptado
+			// var ide = btoa(id);
+
+			// // window.alert('cadena=' + cadena + '  id='+id);
+			// if (resul == 1) {
+			// 	location.href = "ficha.php?id=" + id + "&cadena_busqueda=" + cadena + "&ok=true";
+			// } else {
+			// 	alertify.alert("¡No pudieron guardarse los datos!", function() {
+			// 		location.href = "ficha.php?id=" + id + "&cadena_busqueda=" + cadena + "&ok=false";
+			// 	});
+			// }
+		}
+	</script>
+</head>
+
+<body onload="cerrar()">
+
+	<div class="boton">
+		<a href="#" onClick="cerrar()" title="Regresa">
+			<img img src="../b_img/regresa2.png" width="25" height="25">
+		</a>
+	</div>
+	<!--
+		header.location => se ejecuta del lado del servidor 
+		window.location => se ejecuta del lado del cliente 	
+	-->
+	<!--/* FINAL DE UNA FICHA PUEDE HABER VARIAS *******-	-->
+
+</body>
+
+</html>

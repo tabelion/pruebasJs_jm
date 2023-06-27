@@ -22,8 +22,8 @@ export default function countdown(id, limitDate, finalMessage) {
             seconds = ('0' + Math.floor(limitTime % (1000 * 60) / 1000)).slice(-2);
 
         hours = ('0' + hours).slice(-2);    
-        $countDown.innerHTML = `<h3>Faltan: ${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos para los 70 de Raul</h3>`;    
-
+        $countDown.innerHTML = `<h3>Faltan: ${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos para las 70 de Raul</h3>`;    
+        // para las bodas de oro de Tere y Raul
         // console.log(countdownDate, now, limitTime);
         
         if (limitTime < 0) {
